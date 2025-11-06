@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Olive Recipe App — UX Case Study by Mila Pulvirenti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/">
+          <img src="/assets/avatar.jpg" alt="" class="avatar">
+          vlockn.
+        </a>
+        <nav class="nav">
+          <a href="/#about">About</a>
+          <a href="/#work">Works</a>
+          <a href="/#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="case-study">
+        <div class="case-study-header">
+          <div class="container">
+            <p class="breadcrumb">
+              <a href="/#work">← Back to projects</a>
+            </p>
+            <h1 class="case-study-title">Olive Recipe App</h1>
+            <div class="case-study-meta">
+              <div class="meta-item">
+                <h2 class="meta-label">Role</h2>
+                <p>UX Designer & Flutter Developer</p>
+              </div>
+              <div class="meta-item">
+                <h2 class="meta-label">Timeline</h2>
+                <p>3 weeks, 2025</p>
+              </div>
+              <div class="meta-item">
+                <h2 class="meta-label">Tools</h2>
+                <p>Flutter, Figma, TheMealDB API</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-study-content">
+          <div class="container">
+            <section class="content-section">
+              <h2 class="section-label">Overview</h2>
+              <div class="rich-text">
+                <p>Olive is a mobile app that helps students discover and save recipes through an intuitive, swipe-based interface. The project addresses the common challenge of meal decision fatigue among students while providing a streamlined way to collect cooking inspiration.</p>
+                
+                <blockquote>
+                  How might we help students easily collect, save, and access meal inspiration through a mobile experience?
+                </blockquote>
+              </div>
+              <figure class="case-study-figure">
+                <img src="/assets/case-studies/olive/hero.jpg" alt="Olive app interface showing recipe discovery screens" class="case-study-image">
+              </figure>
+            </section>
+
+            <section class="content-section">
+              <h2 class="section-label">Challenge</h2>
+              <div class="rich-text">
+                <p>As a student myself, I often struggle with deciding what to cook every day. Many students face similar challenges:</p>
+                <ul>
+                  <li>Decision fatigue when choosing meals</li>
+                  <li>Difficulty finding quick, affordable, and nutritious recipes</li>
+                  <li>Scattered recipe inspiration across various social platforms</li>
+                  <li>Lack of organization for saved recipes</li>
+                  <li>Incomplete recipe information on social media</li>
+                </ul>
+
+                <figure class="case-study-figure">
+                  <img src="/assets/case-studies/olive/tiktok-example.jpg" alt="TikTok favorites section showing scattered recipe content" class="case-study-image">
+                  <figcaption>TikTok's favorites section lacks recipe organization and searchability</figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section class="content-section">
+              <h2 class="section-label">User Research</h2>
+              <div class="rich-text">
+                <h3>Interview Insights</h3>
+                <p>I conducted interviews with two university students to understand their cooking habits and recipe discovery processes:</p>
+                
+                <ul>
+                  <li>Luca (23, Italy) – Cooks 4-5 times weekly, prioritizes affordable, flavorful meals</li>
+                  <li>Veele (21, Netherlands) – Daily cook, focuses on healthy, low-effort meals</li>
+                </ul>
+
+                <h3>Key Findings</h3>
+                <ol>
+                  <li><strong>Decision Fatigue:</strong> Students spend excessive time choosing meals, often defaulting to familiar options.</li>
+                  <li><strong>Fragmented Discovery:</strong> Existing apps are paywalled or ad-heavy; social media recipes lack complete information.</li>
+                  <li><strong>Speed Priority:</strong> 30-minute meals using available ingredients are preferred.</li>
+                  <li><strong>Swipe Appeal:</strong> The "Tinder-for-recipes" concept received positive feedback for its playful, efficient approach.</li>
+                  <li><strong>Visual Focus:</strong> Clear imagery and minimal text are essential for quick decision-making.</li>
+                </ol>
+
+                <figure class="case-study-figure">
+                  <img src="/assets/case-studies/olive/persona.jpg" alt="User persona for Sarah Jackson" class="case-study-image">
+                  <figcaption>Sarah Jackson persona: A 22-year-old ICT student balancing studies with cooking healthy meals</figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section class="content-section">
+              <h2 class="section-label">Design Process</h2>
+              <div class="rich-text">
+                <h3>Low-Fidelity Prototypes</h3>
+                <p>I started with black and white wireframes to explore the basic structure and user flows, focusing on core interactions like recipe cards and swipe gestures.</p>
+
+                <figure class="case-study-figure case-study-grid">
+                  <img src="/assets/case-studies/olive/wireframes.jpg" alt="Low-fidelity wireframes showing app structure" class="case-study-image">
+                  <img src="/assets/case-studies/olive/iterations.jpg" alt="Design iterations showing layout exploration" class="case-study-image">
+                </figure>
+
+                <h3>Visual Design Evolution</h3>
+                <p>The high-fidelity design process involved careful consideration of:</p>
+                <ul>
+                  <li>A calm neutral palette with green accents reflecting the Olive brand</li>
+                  <li>Typography combining Astonpoliz for branding and Inter for readability</li>
+                  <li>Minimalist interface focusing on food imagery</li>
+                  <li>Refined UI elements based on peer feedback</li>
+                </ul>
+
+                <h3>Design Validation</h3>
+                <p>User testing with students confirmed our design decisions:</p>
+                <ul>
+                  <li>Green and muted red accents improved visual hierarchy</li>
+                  <li>Revised typography enhanced readability</li>
+                  <li>Right-aligned heart button matched user expectations</li>
+                  <li>Clean border radius treatment modernized the interface</li>
+                </ul>
+
+                <figure class="case-study-figure case-study-grid">
+                  <img src="/assets/case-studies/olive/final-1.jpg" alt="Final design showing recipe card interface" class="case-study-image">
+                  <img src="/assets/case-studies/olive/final-2.jpg" alt="Final design showing saved recipes view" class="case-study-image">
+                </figure>
+              </div>
+            </section>
+
+            <section class="content-section">
+              <h2 class="section-label">Technical Implementation</h2>
+              <div class="rich-text">
+                <h3>Architecture & Technologies</h3>
+                <p>Olive was built using Flutter for cross-platform performance, following clean architecture principles:</p>
+                <ul>
+                  <li>TheMealDB API integration for dynamic recipe content</li>
+                  <li>Hive NoSQL database for offline recipe storage</li>
+                  <li>Repository pattern separating data and UI layers</li>
+                  <li>Singleton SavedStore with ChangeNotifier for state management</li>
+                </ul>
+
+                <h3>Key Features</h3>
+                <p>The app implements several technical features to create a seamless experience:</p>
+                <ul>
+                  <li>Reusable widgets (RecipeCard, HomeActionBar, TagChip)</li>
+                  <li>Animated card transitions and visual feedback</li>
+                  <li>Offline support for saved recipes</li>
+                  <li>Proper error handling and loading states</li>
+                </ul>
+
+                <figure class="case-study-figure">
+                  <img src="/assets/case-studies/olive/features.jpg" alt="Key features of the Olive app" class="case-study-image">
+                  <figcaption>Key features including recipe cards, filters, and saved recipes view</figcaption>
+                </figure>
+
+                <h3>Collaborative Development</h3>
+                <p>The project utilized GitLab for version control, implementing:</p>
+                <ul>
+                  <li>Structured branching strategy for feature development</li>
+                  <li>Peer review process to maintain code quality</li>
+                  <li>AI-assisted work distribution between team members</li>
+                  <li>Regular integration checkpoints for feature validation</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="content-section">
+              <h2 class="section-label">Outcomes</h2>
+              <div class="rich-text">
+                <p>The project delivered several key achievements:</p>
+                <ul>
+                  <li>Successfully implemented a Flutter-based recipe discovery app</li>
+                  <li>Created an intuitive, swipe-based interface for recipe browsing</li>
+                  <li>Integrated offline support for saved recipes</li>
+                  <li>Received positive feedback from student user testing</li>
+                </ul>
+
+                <blockquote>
+                  The swipe-based interface makes finding recipes fun and easy. It's like Tinder for food!
+                  <cite>— Student Tester</cite>
+                </blockquote>
+
+                <h3>Learning Through Constraints</h3>
+                <p>The three-week timeline for this project pushed me to adapt my typically thorough research and iteration process into a focused sprint. This constraint became a valuable learning opportunity:</p>
+                <ul>
+                  <li>Practiced rapid decision-making and prioritization of features</li>
+                  <li>Learned to conduct efficient user research with a smaller but focused participant group</li>
+                  <li>Developed skills in quick prototyping and iterative feedback loops</li>
+                  <li>Gained experience in adapting design processes to tight deadlines while maintaining quality</li>
+                </ul>
+
+                <p>This experience taught me how to be more adaptable and efficient in my design process while still delivering meaningful solutions. The compressed timeline helped me develop a more streamlined approach to user research and iteration, skills that will be valuable in future professional projects.</p>
+              </div>
+            </section>
+
+            <div class="case-study-nav">
+              <a href="/case-studies/center.html" class="prev-project">
+                ← Center Browser Extension
+              </a>
+              <a href="/case-studies/nasmak.html" class="next-project">
+                Nasmak PM →
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>© 2025 Mila Pulvirenti — Built with HTML, CSS & JS</small>
+        <nav class="footer-nav">
+          <a href="#">Privacy</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
