@@ -13,8 +13,7 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="/">
-          <img src="/assets/avatar.jpg" alt="" class="avatar">
-          vlockn.
+          MP
         </a>
         <nav class="nav">
           <a href="/#about">About</a>
@@ -65,9 +64,16 @@
               <div class="rich-text">
                 <p>I built a media campaign for Nasmak PM, an experimental electronic band, to help them attract younger audiences, grow their fanbase, and establish a stronger social media presence. The project focused on creating a distinctive visual identity that matched their unique sound while appealing to a new generation of music fans.</p>
               </div>
-              <figure class="case-study-figure">
-                <img src="/assets/case-studies/nasmak/hero.jpg" alt="Nasmak PM band performing live" class="case-study-image">
-              </figure>
+             <div class="poster-showcase">
+                <figure class="poster-item">
+                  <img src="/images/Nasmak-Poster-1.png" alt="Nasmak PM Poster Design 1" class="poster-image">
+                  <figcaption>First poster design I made in Photoshop featuring dynamic typography and brand elements</figcaption>
+                </figure>
+                <figure class="poster-item">
+                  <img src="/images/Nasmak-Poster-2.png" alt="Nasmak PM Poster Design 2" class="poster-image">
+                  <figcaption>Second poster design I made in Photoshop with fisheye effect and bold visuals</figcaption>
+                </figure>
+              </div>
             </section>
 
             <section class="content-section">
@@ -98,98 +104,362 @@
             </section>
 
             <section class="content-section">
+              <div class="characters-showcase">
+                <figure class="character-item">
+                  <img src="/images/plusa-open.png" alt="Plusa character" class="character-image">
+                </figure>
+                <figure class="character-item">
+                  <img src="/images/minnie-closed.png" alt="Minnie character" class="character-image">
+                </figure>
+              </div>
+
+              <style>
+                .characters-showcase {
+                  display: flex;
+                  justify-content: center;
+                  gap: 4rem;
+                  margin: 3rem auto;
+                  max-width: 800px;
+                }
+
+                .character-item {
+                  flex: 0 1 300px;
+                  margin: 0;
+                  text-align: center;
+                  cursor: pointer;
+                }
+
+                .character-image {
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  margin-bottom: 1rem;
+                  transform: translateY(0);
+                  transition: all 0.3s ease;
+                }
+
+                .character-item:hover .character-image {
+                  transform: translateY(-8px);
+                  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.1));
+                }
+
+                .character-item figcaption {
+                  color: #666;
+                  font-size: 0.9rem;
+                  transition: color 0.3s ease;
+                }
+
+                .character-item:hover figcaption {
+                  color: #333;
+                }
+
+                @media (max-width: 768px) {
+                  .characters-showcase {
+                    flex-direction: column;
+                    gap: 2rem;
+                    align-items: center;
+                  }
+
+                  .character-item {
+                    flex: 0 1 auto;
+                    max-width: 250px;
+                  }
+                }
+              </style>
+
               <h2 class="section-label">Development Process</h2>
               <div class="rich-text">
                 <h3>1. Project Planning</h3>
-                <p>Following our media campaign work, my teammate and I identified an opportunity to help Nasmak PM create more engaging social media content. Despite our limited JavaScript experience, we decided to challenge ourselves by creating an interactive app that would bring their brand mascots to life.</p>
+                <p>Following our previous media campaign work for Nasmak PM, my teammate and I identified an opportunity to help Nasmak PM create more engaging social media content. We wanted to do this by creating them an app that would allow them to easily generate custom videos to use on social media. We came up with two 'mascots' being a plus and minus shape to relate to their name (Nasmak Plus Minus) and relate to the album artowrks. Despite our limited JavaScript experience, we decided to challenge ourselves by creating an interactive app that would bring their brand mascots to life.</p>
 
-                <h3>2. Prototyping Journey</h3>
-                <p>The development process involved three key prototypes:</p>
-                <ul>
-                  <li>Initial proof of concept with basic shapes and movement</li>
-                  <li>Second iteration adding sprite functionality</li>
-                  <li>Final prototype with full character control and size adjustments</li>
-                </ul>
-
-                <figure class="case-study-figure case-study-grid">
-                  <img src="/assets/case-studies/nasmak/prototype-1.jpg" alt="Early prototype showing basic shape movement" class="case-study-image">
-                  <img src="/assets/case-studies/nasmak/prototype-2.jpg" alt="Final prototype with character controls" class="case-study-image">
-                </figure>
-
-                <h3>3. Final Implementation</h3>
-                <p>The final version of PMRecorder includes:</p>
-                <ul>
-                  <li>Intuitive control panel for sprite manipulation</li>
-                  <li>Character toggle functionality</li>
-                  <li>Size and speed adjustments</li>
-                  <li>Background color changer with green screen support</li>
-                  <li>One-click recording and download capabilities</li>
-                </ul>
-
-                <figure class="case-study-figure">
-                  <img src="/assets/case-studies/nasmak/final-app.jpg" alt="PMRecorder final interface" class="case-study-image">
-                  <figcaption>The PMRecorder interface with control panel and character preview</figcaption>
-                </figure>
-
-                <h3>4. Version Control</h3>
-                <p>We implemented Git workflows to manage our collaborative development:</p>
-                <ul>
-                  <li>Shared GitLab repository for code synchronization</li>
-                  <li>Descriptive commit messages for clear change tracking</li>
-                  <li>Conflict resolution using Git's version history</li>
-                  <li>Learning experience in collaborative coding practices</li>
-                </ul>
-
-                <blockquote>
-                  "I am very pleased with this application as it is something that we can use right away. I am very excited to show the rest of the band members!"
-                  <cite>— Toon, Nasmak PM</cite>
-                </blockquote>
-              </div>
-            </section>
-
-            <section class="content-section">
-              <h2 class="section-label">Results & Recognition</h2>
-              <div class="rich-text">
-                <p>Conducted user testing with diverse demographics to validate designs:</p>
+                <h3>2. Interactive Prototypes</h3>
+                <p>The development process evolved through three interactive prototypes, each building upon the previous iteration:</p>
                 
-                <h3>Key Findings</h3>
-                <ul>
-                  <li>Strong positive response to the fisheye effect and bold graphics</li>
-                  <li>Suggestions for more vibrant colors to enhance impact</li>
-                  <li>Recommendations for interactive elements like QR codes</li>
-                </ul>
+                <div class="prototype-showcase">
+                  <div class="prototype-item">
+                    <h4>Prototype 1: Movement Basics</h4>
+                    <ul>
+                      <li>Initial proof of concept</li>
+                      <li>Basic shape movement implementation</li>
+                      <li>Foundational controls testing</li>
+                    </ul>
+                    <a href="https://m1lsy.github.io/m1lsy.github.io-semester-2/portfolio/dev-project/prototype-1/index.html" target="_blank" class="prototype-link">Try Prototype 1 →</a>
+                  </div>
 
-                <blockquote>
-                  "Both posters effectively represent the band's aesthetic. The fisheye effect in Poster 2 is eye-catching, and I like that Poster 1 has similarities to our music video. Overall, the designs are very impressive!"
-                  <cite>— Nasmak PM</cite>
-                </blockquote>
+                  <div class="prototype-item">
+                    <h4>Prototype 2: Sprite Integration</h4>
+                    <ul>
+                      <li>Character sprite functionality</li>
+                      <li>Improved movement mechanics</li>
+                      <li>Basic animation framework</li>
+                    </ul>
+                    <a href="https://m1lsy.github.io/m1lsy.github.io-semester-2/portfolio/dev-project/prototype-2/index.html" target="_blank" class="prototype-link">Try Prototype 2 →</a>
+                  </div>
+
+                  <div class="prototype-item">
+                    <h4>Prototype 3: Full Features</h4>
+                    <ul>
+                      <li>Complete character control system</li>
+                      <li>Size adjustment functionality</li>
+                      <li>Recording capabilities</li>
+                    </ul>
+                    <a href="https://m1lsy.github.io/m1lsy.github.io-semester-2/portfolio/dev-project/prototype-3/index.html" target="_blank" class="prototype-link">Try Prototype 3 →</a>
+                  </div>
+                </div>
+
+                <style>
+                  .prototype-showcase {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 1.5rem;
+                    margin: 2.5rem 0;
+                  }
+                  
+                  .prototype-item {
+                    background: #f8f8f8;
+                    padding: 2.5rem;
+                    border-radius: 12px;
+                    transition: all 0.3s ease;
+                    border: 1px solid #eee;
+                  }
+                  
+                  .prototype-item:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+                    border-color: #e7ffa3;
+                  }
+                  
+                  .prototype-item h4 {
+                    margin: 0 0 1rem;
+                    font-size: 1.25rem;
+                    color: #222;
+                  }
+                  
+                  .prototype-item ul {
+                    margin: 0;
+                    padding-left: 1.25rem;
+                  }
+                  
+                  .prototype-item li {
+                    margin-bottom: 0.5rem;
+                    color: #555;
+                  }
+                  
+                  .prototype-link {
+                    display: inline-block;
+                    margin-top: 1.5rem;
+                    padding: 0.75rem 1.25rem;
+                    color: #333;
+                    text-decoration: none;
+                    border: 2px solid #e7ffa3;
+                    border-radius: 6px;
+                    transition: all 0.2s ease;
+                    font-weight: 500;
+                  }
+                  
+                  .prototype-link:hover {
+                    background-color: #e7ffa3;
+                    transform: translateX(4px);
+                  }
+                  
+                  @media (max-width: 768px) {
+                    .prototype-item {
+                      padding: 2rem;
+                    }
+                  }
+
+                  .final-product {
+                    margin-top: 3rem;
+                    padding: 3rem;
+                    background: linear-gradient(to right, #f8f8f8, #f0f0f0);
+                    border-radius: 12px;
+                    text-align: center;
+                    border: 2px solid #e7ffa3;
+                  }
+
+                  .final-product h3 {
+                    margin: 0 0 1rem;
+                    font-size: 1.5rem;
+                    color: #222;
+                  }
+
+                  .final-product p {
+                    margin: 0 0 1.5rem;
+                    color: #555;
+                    max-width: 600px;
+                    margin-left: auto;
+                    margin-right: auto;
+                  }
+
+                  .final-product-link {
+                    display: inline-block;
+                    padding: 1rem 2rem;
+                    background-color: #e7ffa3;
+                    color: #222;
+                    text-decoration: none;
+                    border-radius: 8px;
+                    font-weight: 500;
+                    transition: all 0.2s ease;
+                  }
+
+                  .final-product-link:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+                  }
+                </style>
+
+                <div class="final-product">
+                  <h3>Try the Final PMRecorder</h3>
+                  <p>Experience the complete application with all features including character control, size & speed adjustments, background colour changing and video recording capabilities.</p>
+                  <a href="https://m1lsy.github.io/m1lsy.github.io-semester-2/portfolio/dev-project/final-pmrecorder/index.html" target="_blank" class="final-product-link">Launch PMRecorder →</a>
+                </div>
+
+              <style>
+                .poster-showcase {
+                  display: flex;
+                  justify-content: center;
+                  gap: 3rem;
+                  margin: 2rem auto;
+                  max-width: 800px;
+                  align-items: flex-start;
+                }
+
+                .poster-item {
+                  flex: 0 1 350px;
+                  margin: 0;
+                  display: flex;
+                  flex-direction: column;
+                }
+
+                .poster-image {
+                  width: 100%;
+                  height: 500px;
+                  border-radius: 8px;
+                  display: block;
+                  object-fit: contain;
+                  background: #f8f8f8;
+                }
+
+                .poster-item figcaption {
+                  margin-top: 1rem;
+                  text-align: center;
+                  color: #666;
+                  font-size: 0.9rem;
+                  line-height: 1.4;
+                }
+
+                @media (max-width: 768px) {
+                  .poster-showcase {
+                    flex-direction: column;
+                    gap: 2rem;
+                    align-items: center;
+                  }
+
+                  .poster-item {
+                    flex: 0 1 auto;
+                    max-width: 350px;
+                  }
+                }
+              </style>
+            </section>                <div class="centered-section">
+                  <h3>4. Version Control</h3>
+                  <p>We implemented Git workflows to manage our collaborative development:</p>
+                  <ul>
+                    <li>Shared GitLab repository for code synchronization</li>
+                    <li>Descriptive commit messages for clear change tracking</li>
+                    <li>Conflict resolution using Git's version history</li>
+                    <li>Learning experience in collaborative coding practices</li>
+                  </ul>
+
+                  <p class="repo-link">Want to explore the code? View the <a href="https://git.fhict.nl/I522016/nasmak-dev-project" target="_blank">complete repository</a></p>
+
+                  <blockquote class="accent-quote">
+                    "I am very pleased with this application as it is something that we can use right away. I am very excited to show the rest of the band members!"
+                    <cite>— Toon, Nasmak PM</cite>
+                  </blockquote>
+
+                  <style>
+                    .repo-link {
+                      margin: 2rem 0;
+                      text-align: center;
+                    }
+                    
+                    .repo-link a {
+                      color: #333;
+                      text-decoration: none;
+                      border-bottom: 2px solid #e7ffa3;
+                      padding-bottom: 2px;
+                      transition: all 0.2s ease;
+                    }
+                    
+                    .repo-link a::after {
+                      content: " ↗";
+                      display: inline-block;
+                      transition: transform 0.2s ease;
+                    }
+                    
+                    .repo-link a:hover {
+                      background-color: #e7ffa3;
+                    }
+                    
+                    .repo-link a:hover::after {
+                      transform: translate(2px, -2px);
+                    }
+                  </style>
+
+                  <style>
+                    .accent-quote {
+                      margin: 2rem 0;
+                      padding: 1.5rem 2rem;
+                      background: #f8f8f8;
+                      border-left: 4px solid #e7ffa3;
+                      border-radius: 0 8px 8px 0;
+                    }
+                    
+                    .accent-quote cite {
+                      display: block;
+                      margin-top: 1rem;
+                      font-style: normal;
+                      color: #666;
+                    }
+                  </style>
+                </div>
+
+                <style>
+                  .centered-section {
+                    max-width: 800px;
+                    margin: 0 auto;
+                  }
+                  
+                  .centered-section ul {
+                    padding-left: 0;
+                    list-style-position: inside;
+                  }
+                  
+                  .centered-section blockquote {
+                    margin-left: 0;
+                    margin-right: 0;
+                  }
+                </style>
               </div>
             </section>
 
             <section class="content-section">
-              <h2 class="section-label">Growth Strategy</h2>
-              <div class="rich-text">
-                <p>Implemented practical growth tactics including:</p>
-                <ul>
-                  <li>Partnership with @eindhovencity for free event promotion</li>
-                  <li>Strategic poster placement in Strijp S area</li>
-                  <li>Cross-platform content distribution plan</li>
-                  <li>Development of consistent brand mascots</li>
-                </ul>
-
                 <h3>Reflection</h3>
                 <p>This project was particularly challenging and rewarding due to the unique nature of the client. The band's 'weird yet cool' vibe required a careful balance between creativity and professionalism. The success of the campaign, as evidenced by the client's positive feedback, demonstrated our ability to capture their distinctive style while creating content that would resonate with a younger audience.</p>
               </div>
             </section>
 
-            <div class="case-study-nav">
-              <a href="/case-studies/center.html" class="prev-project">
-                ← Center Extension
-              </a>
-              <a href="/case-studies/olive.html" class="next-project">
-                Olive App →
-              </a>
-            </div>
+            <section class="content-section">
+              <div class="case-study-nav">
+                <a href="/case-studies/center.html" class="prev-project">
+                  ← Center Extension
+                </a>
+                <a href="/case-studies/olive.html" class="next-project">
+                  Olive App →
+                </a>
+              </div>
+            </section>
           </div>
         </div>
       </article>
@@ -197,10 +467,10 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <small>© 2025 Mila Pulvirenti — Built with HTML, CSS & JS</small>
+        <small>© 2025 Mila Pulvirenti - Built with HTML, CSS & JS</small>
         <nav class="footer-nav">
-          <a href="#">Privacy</a>
-          <a href="#contact">Contact</a>
+          <a href="mailto:milapulvirenti@icloud.com">milapulvirenti@icloud.com</a>
+          <a href="https://linkedin.com/in/mila-pulvirenti" target="_blank">LinkedIn</a>
         </nav>
       </div>
     </footer>

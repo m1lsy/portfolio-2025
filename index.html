@@ -1,8 +1,9 @@
 
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mila Pulvirenti — UX & Web Dev</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,13 +14,12 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="/">
-          <img src="/assets/avatar.jpg" alt="" class="avatar">
-          vlockn.
+          MP
         </a>
         <nav class="nav">
           <a href="#about">About</a>
-          <a href="#work">Works</a>
-          <a href="#contact">Contact</a>
+          <a href="#projects">Works</a>
+          <a href="#skills">Skills</a>
         </nav>
       </div>
     </header>
@@ -51,7 +51,7 @@
           </div>
         </div>
         
-        <section class="projects-list">
+        <section id="projects" class="projects-list">
           <h2 class="section-label">Selected Projects</h2>
           <div class="project-links">
             <a href="/case-studies/center.html" class="project-link">
@@ -59,7 +59,7 @@
               <span class="arrow">→</span>
             </a>
             <a href="/case-studies/olive.html" class="project-link">
-              <span class="project-title">Olive Recipe App</span>
+              <span class="project-title">Olive & Folio Apps</span>
               <span class="arrow">→</span>
             </a>
             <a href="/case-studies/nasmak.html" class="project-link">
@@ -73,47 +73,236 @@
           </div>
         </section>
 
-      <section id="work" class="container work">
-        <h2 class="section-title">Selected projects</h2>
-        <div class="projects-grid">
-          <a href="/case-studies/melbourne-fashion-week.html" class="card">
-            <img class="card-image" src="/assets/case-studies/mfw/thumb.jpg" alt="Melbourne Fashion Week case study" />
-            <div class="card-body">
-              <h3>Melbourne Fashion Week</h3>
-              <p class="muted">UX Design, Research — 2025</p>
+      <section id="about" class="container about">
+        <h2 class="section-label">About</h2>
+        <div class="about-grid">
+          <div class="about-content">
+            <p class="about-text">I'm a UX designer and front-end developer based in Eindhoven, Netherlands but originally from Durban, South Africa. I enjoy working on projects that combine clean aesthetics with human-centred interactions.</p>
+            <p class="about-text">Currently studying ICT & Media Design at Fontys University, I'm passionate about creating digital experiences that make a difference. I believe in thorough user research, clean code, and pixel-perfect design implementations.</p>
+            <div class="about-links">
+              <a href="https://github.com/m1lsy" target="_blank" class="about-link">GitHub ↗</a>
+              <a href="https://www.linkedin.com/in/mila-pulvirenti" target="_blank" class="about-link">LinkedIn ↗</a>
             </div>
-          </a>
-
-          <a href="/case-studies/nike-running-app.html" class="card">
-            <img class="card-image" src="/assets/case-studies/nike/thumb.jpg" alt="Nike Running App case study" />
-            <div class="card-body">
-              <h3>Nike Running App</h3>
-              <p class="muted">UX Research, Product Design — 2024</p>
-            </div>
-          </a>
-
-          <a href="/case-studies/commbank-redesign.html" class="card">
-            <img class="card-image" src="/assets/case-studies/commbank/thumb.jpg" alt="CommBank Redesign case study" />
-            <div class="card-body">
-              <h3>CommBank Redesign</h3>
-              <p class="muted">UX/UI Design — 2025</p>
-            </div>
-          </a>
+          </div>
+          <div class="about-image">
+            <img src="/images/mila-pic.jpg" alt="Mila Pulvirenti" class="portrait">
+          </div>
         </div>
+
+        <style>
+          .about {
+            margin-top: 6rem;
+            padding-bottom: 4rem;
+          }
+
+          .about-grid {
+            display: grid;
+            grid-template-columns: 1.5fr minmax(300px, 1fr);
+            gap: 4rem;
+            margin-top: 2rem;
+            align-items: start;
+          }
+
+          .about-image {
+            position: relative;
+          }
+
+          .about-image::after {
+            content: '';
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            left: -1rem;
+            bottom: -1rem;
+            background: #e7ffa3;
+            z-index: 1;
+            border-radius: 4px;
+          }
+
+          .portrait {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            position: relative;
+            z-index: 2;
+            filter: grayscale(100%);
+            transition: all 0.3s ease;
+          }
+
+          .portrait:hover {
+            filter: grayscale(0%);
+            transform: translate(4px, -4px);
+          }
+
+          .about-content {
+            padding-top: 1rem;
+          }
+
+          .about-text {
+            font-size: 1.125rem;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 1.5rem;
+          }
+
+          .about-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+          }
+
+          .about-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.75rem 1.25rem;
+            background: #f8f8f8;
+            color: #333;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            border: 1px solid #eee;
+          }
+
+          .about-link:hover {
+            background: #e7ffa3;
+            transform: translateY(-2px);
+          }
+
+          @media (max-width: 768px) {
+            .about-grid {
+              grid-template-columns: 1fr;
+              gap: 2rem;
+            }
+
+            .about-image {
+              max-width: 400px;
+              margin: 0 auto;
+            }
+
+            .about-content {
+              padding-top: 1rem;
+            }
+          }
+        </style>
       </section>
 
-      <section id="about" class="container about">
-        <h2 class="section-title">About</h2>
-        <p>I’m a UX designer and front-end developer. I enjoy working on projects that combine clean aesthetics with human-centred interactions.</p>
+      <section id="skills" class="container skills">
+        <h2 class="section-label">Skills & Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3 class="skill-category-title">Design</h3>
+            <ul class="skill-list">
+              <li>User Experience (UX) Design</li>
+              <li>User Interface (UI) Design</li>
+              <li>Figma & Prototyping</li>
+              <li>User Research & Testing</li>
+              <li>Information Architecture</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h3 class="skill-category-title">Frontend Development</h3>
+            <ul class="skill-list">
+              <li>HTML5 & CSS3</li>
+              <li>JavaScript (ES6+)</li>
+              <li>React</li>
+              <li>Responsive Web Design</li>
+              <li>Flutter & Dart</li>
+              <li>Git Version Control</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h3 class="skill-category-title">Tools & Software</h3>
+            <ul class="skill-list">
+              <li>VS Code</li>
+              <li>Android Studio</li>
+              <li>Adobe Creative Suite</li>
+              <li>GitLab/GitHub</li>
+              <li>Browser Developer Tools</li>
+            </ul>
+          </div>
+        </div>
+
+        <style>
+          .skills {
+            margin-top: 6rem;
+            padding-bottom: 4rem;
+          }
+
+          .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 3rem;
+            margin-top: 2rem;
+          }
+
+          .skill-category:nth-child(3) {
+            grid-column: 1 / -1;
+            justify-self: center;
+            width: 100%;
+            max-width: calc(50% - 1.5rem);
+          }
+
+          .skill-category {
+            background: #f8f8f8;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            transition: all 0.2s ease;
+          }
+
+          .skill-category:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+          }
+
+          .skill-category-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #333;
+          }
+
+          .skill-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+
+          .skill-list li {
+            padding: 0.5rem 0;
+            color: #555;
+            border-bottom: 1px solid #eee;
+            transition: color 0.2s ease;
+          }
+
+          .skill-list li:last-child {
+            border-bottom: none;
+          }
+
+          .skill-list li:hover {
+            color: #333;
+          }
+
+          @media (max-width: 768px) {
+            .skills-grid {
+              grid-template-columns: 1fr;
+              gap: 2rem;
+            }
+          }
+        </style>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <small>© 2025 Mila Pulvirenti — Built with HTML, CSS & JS</small>
+        <small>© 2025 Mila Pulvirenti - Built with HTML, CSS & JS</small>
         <nav class="footer-nav">
-          <a href="#">Privacy</a>
-          <a href="#contact">Contact</a>
+          <a href="mailto:milapulvirenti@icloud.com">milapulvirenti@icloud.com</a>
+          <a href="https://linkedin.com/in/mila-pulvirenti" target="_blank">LinkedIn</a>
         </nav>
       </div>
     </footer>

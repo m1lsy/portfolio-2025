@@ -1,20 +1,43 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <title>Previous Portfolio Websites | Mila Pulvirenti</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Previous Portfolio Websites | Mila Pulvirenti</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
+    <style>
+      .portfolio-links {
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .portfolio-link {
+        display: inline-block;
+        padding: 1rem 1.5rem;
+        background: #f8f8f8;
+        color: #333;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: all 0.2s ease;
+        border: 1px solid #eee;
+      }
+
+      .portfolio-link:hover {
+        background: #e7ffa3;
+        transform: translateX(4px);
+      }
+    </style>
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="/">
-          <img src="/assets/avatar.jpg" alt="" class="avatar">
-          vlockn.
+          MP
         </a>
         <nav class="nav">
           <a href="/#about">About</a>
@@ -34,102 +57,23 @@
             <h1 class="case-study-title">Previous Portfolio Websites</h1>
             <div class="case-study-meta">
               <div class="meta-item">
-                <h2 class="meta-label">Role</h2>
-                <p>Frontend Developer</p>
-              </div>
-              <div class="meta-item">
                 <h2 class="meta-label">Timeline</h2>
                 <p>2023-2024</p>
-              </div>
-              <div class="meta-item">
-                <h2 class="meta-label">Technologies</h2>
-                <p>HTML, CSS, JavaScript</p>
               </div>
             </div>
           </div>
         </div>        <div class="case-study-content">
           <div class="container">
             <section class="content-section">
-              <h2 class="section-label">Overview</h2>
               <div class="rich-text">
-                <p>Throughout my second and third semesters, I developed two portfolio websites that showcase my journey in web development and Media design. These websites serve as both a technical learning experience and a comprehensive archive of my project work.</p>
+                <p>Throughout my academic journey, I've created several portfolio websites that document my growth as a designer and developer. These previous versions showcase different stages of my learning process and technical development.</p>
+
+                <p>While these portfolios may not be as polished as my current work, they represent authentic milestones in my journey. Originally created for my school assessors to document my progress, I chose to build them as websites (using HTML, CSS, and JavaScript) even though it wasn't required. I did this because I genuinely enjoy the entire process of designing and developing websites, and each version helped me improve my skills further.</p>
                 
-                <blockquote>
-                  These portfolios represent my growth as a developer, from learning the basics of HTML to implementing complex JavaScript functionality and also showcase my design style evolution.
-                </blockquote>
-              </div>
-            </section>
-
-            <section class="content-section">
-              <h2 class="section-label">Portfolio Evolution</h2>
-              <div class="rich-text">
-                <h3>Semester 2 Portfolio</h3>
-                <p>My first dedicated portfolio website focused on mastering HTML and CSS fundamentals:</p>
-                <ul>
-                  <li>Custom responsive layouts using CSS Grid and Flexbox</li>
-                  <li>Implementation of semantic HTML structure</li>
-                  <li>Basic animations and transitions</li>
-                  <li>Mobile-first design approach</li>
-                </ul>
-                <a href="#semester2link" class="portfolio-link" target="_blank">View Semester 2 Portfolio →</a>
-
-                <h3>Semester 3 Portfolio</h3>
-                <p>The second iteration showcased significant technical growth:</p>
-                <ul>
-                  <li>Interactive elements using vanilla JavaScript</li>
-                  <li>Advanced CSS animations and transitions</li>
-                  <li>Implementation of accessibility features</li>
-                  <li>Performance optimization techniques</li>
-                </ul>
-                <a href="#semester3link" class="portfolio-link" target="_blank">View Semester 3 Portfolio →</a>
-
-                <figure class="case-study-figure case-study-grid">
-                  <img src="/assets/case-studies/portfolios/semester2.jpg" alt="Screenshot of Semester 2 portfolio website" class="case-study-image">
-                  <img src="/assets/case-studies/portfolios/semester3.jpg" alt="Screenshot of Semester 3 portfolio website" class="case-study-image">
-                </figure>
-              </div>
-            </section>
-
-            <section class="content-section">
-              <h2 class="section-label">Learning Journey</h2>
-              <div class="rich-text">
-                <p>These portfolio websites represent different stages in my development journey. While they may not be as polished as my current work, they demonstrate important learning milestones:</p>
-                
-                <h3>Technical Growth</h3>
-                <ul>
-                  <li>Evolution from basic HTML/CSS to complex layouts</li>
-                  <li>Progressive enhancement of JavaScript functionality</li>
-                  <li>Improved understanding of web performance</li>
-                  <li>Development of responsive design skills</li>
-                </ul>
-
-                <h3>Project Documentation</h3>
-                <p>These portfolios contain detailed documentation of numerous projects, including:</p>
-                <ul>
-                  <li>Early UX/UI design work</li>
-                  <li>Web development experiments</li>
-                  <li>Collaborative team projects</li>
-                  <li>Design system implementations</li>
-                </ul>
-                
-                <blockquote>
-                  These previous portfolios may not be perfect, but they're honest representations of my learning process and technical growth.
-                </blockquote>
-              </div>
-            </section>
-
-            <section class="content-section">
-              <h2 class="section-label">Reflection</h2>
-              <div class="rich-text">
-                <p>Looking back at these earlier portfolio iterations provides valuable insights into my development as a designer and developer:</p>
-                <ul>
-                  <li>Each version shows clear technical progression</li>
-                  <li>Documentation practices improved over time</li>
-                  <li>Design decisions became more intentional</li>
-                  <li>Problem-solving approaches evolved</li>
-                </ul>
-
-                <p>While these portfolios may contain imperfections, they serve as authentic markers of my journey and growth in web development. They provide additional context and depth to my current work, showing the foundation upon which my current skills are built.</p>
+                <div class="portfolio-links">
+                  <a href="https://m1lsy.github.io/m1lsy.github.io-semester-2/portfolio/index.html" target="_blank" class="portfolio-link">View Semester 2 Portfolio →</a>
+                  <a href="https://m1lsy.github.io/semester-3/projects.html" target="_blank" class="portfolio-link">View Semester 3 Portfolio →</a>
+                </div>
               </div>
             </section>
 
@@ -148,10 +92,10 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <small>© 2025 Mila Pulvirenti — Built with HTML, CSS & JS</small>
+        <small>© 2025 Mila Pulvirenti - Built with HTML, CSS & JS</small>
         <nav class="footer-nav">
-          <a href="#">Privacy</a>
-          <a href="#contact">Contact</a>
+          <a href="mailto:milapulvirenti@icloud.com">milapulvirenti@icloud.com</a>
+          <a href="https://linkedin.com/in/mila-pulvirenti" target="_blank">LinkedIn</a>
         </nav>
       </div>
     </footer>

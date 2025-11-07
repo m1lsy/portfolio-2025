@@ -22,14 +22,38 @@
         width: 100%;
         height: auto;
       }
+      .rich-text a {
+        color: #333;
+        text-decoration: none;
+        border-bottom: 2px solid #000000;
+        padding-bottom: 2px;
+        transition: all 0.2s ease;
+      }
+      .rich-text a:hover {
+        color: #000;
+        background-color: #e7ffa3;
+      }
+      .rich-text a:focus {
+        outline: 2px solid #e7ffa3;
+        outline-offset: 2px;
+      }
+      .rich-text a[target="_blank"]::after {
+        content: "↗";
+        display: inline-block;
+        margin-left: 4px;
+        font-size: 0.8em;
+        transition: transform 0.2s ease;
+      }
+      .rich-text a[target="_blank"]:hover::after {
+        transform: translate(2px, -2px);
+      }
     </style>
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="/">
-          <img src="/assets/avatar.jpg" alt="" class="avatar">
-          vlockn.
+          MP
         </a>
         <nav class="nav">
           <a href="/#about">About</a>
@@ -70,6 +94,11 @@
               <h2 class="section-label">Overview</h2>
               <div class="rich-text">
                 <p>In this project, my team and I collaborated with our client Studio Krom, an innovative design and technology studio based in Eindhoven, to help make the digital world more accessible and inclusive.</p>
+
+                <figure class="case-study-figure">
+                  <img src="/images/center copy.jpg" alt="Center browser extension interface overview" class="case-study-image">
+                  <figcaption>Center: A browser extension designed to improve digital accessibility for users with ADHD</figcaption>
+                </figure>
               </div>
             </section>
 
@@ -168,12 +197,6 @@
                   "I found your presentation to be very professional... All of the features you proposed were strong, but my advice is to focus on the web page condenser and the Pomodoro timer. Keep in mind the 'Swiss Army Knife Complex': sometimes having too many features can dilute the impact."
                   <cite>— Joris, Studio Krom</cite>
                 </blockquote>
-                <p>Our final interface design focused on clarity and ease of use:</p>
-
-                <figure class="case-study-figure">
-                  <img src="/images/final-center-iteration-2.jpg" alt="Final interface design for Center extension" class="case-study-image">
-                  <figcaption>Final interface design showing the timer and focus mode features</figcaption>
-                </figure>
               </div>
             </section>
 
@@ -197,6 +220,10 @@
                   <li>AI-powered text summarizer</li>
                   <li>User preference settings</li>
                 </ul>
+
+                <h3>Source Code</h3>
+                <p>The project's source code is available in our university's GitLab repository: <a href="https://git.fhict.nl/I524911/project-center" target="_blank">git.fhict.nl/I524911/project-center</a></p>
+                <p><em>Note: This is an internal Fontys University repository and may require appropriate credentials for access. Please contact me directly if you need to access it.</em></p>
               </div>
             </section>
 
@@ -264,10 +291,10 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <small>© 2025 Mila Pulvirenti — Built with HTML, CSS & JS</small>
+        <small>© 2025 Mila Pulvirenti - Built with HTML, CSS & JS</small>
         <nav class="footer-nav">
-          <a href="#">Privacy</a>
-          <a href="#contact">Contact</a>
+          <a href="mailto:milapulvirenti@icloud.com">milapulvirenti@icloud.com</a>
+          <a href="https://linkedin.com/in/mila-pulvirenti" target="_blank">LinkedIn</a>
         </nav>
       </div>
     </footer>
