@@ -3,100 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rapid Development Sprints: Olive & Folio - Case Study by Mila Pulvirenti</title>
+    <title>Olive & Folio - Case Study by Mila Pulvirenti</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-    <style>
-      .rich-text a {
-        color: #333;
-        text-decoration: none;
-        border-bottom: 2px solid #e7ffa3;
-        padding-bottom: 2px;
-        transition: all 0.2s ease;
-      }
-      .rich-text a:hover {
-        color: #000;
-        background-color: #e7ffa3;
-      }
-      .rich-text a:focus {
-        outline: 2px solid #e7ffa3;
-        outline-offset: 2px;
-      }
-      .rich-text a[target="_blank"]::after {
-        content: "↗";
-        display: inline-block;
-        margin-left: 4px;
-        font-size: 0.8em;
-        transition: transform 0.2s ease;
-      }
-      .rich-text a[target="_blank"]:hover::after {
-        transform: translate(2px, -2px);
-      }
-      /* Custom styles for iteration showcase */
-      .iteration-showcase {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        margin: 2rem 0;
-      }
-      
-      .iteration-showcase img,
-      .iteration-showcase video {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-        max-height: 600px;
-        border-radius: 8px;
-      }
-      
-      .case-study-video {
-        width: 100%;
-        background: #f5f5f5;
-        border-radius: 8px;
-      }
-      
-      .iteration-timeline {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-      }
-      
-      .iteration-phase {
-        background: #f5f5f5;
-        padding: 2rem;
-        border-radius: 8px;
-      }
-      
-      .full-width-image {
-        margin: 2rem -2rem;
-        width: calc(100% + 4rem);
-      }
-      
-      .full-width-image img {
-        width: 100%;
-        height: auto;
-      }
-      
-      @media (max-width: 768px) {
-        .iteration-showcase {
-          grid-template-columns: 1fr;
-        }
-        
-        .full-width-image {
-          margin: 2rem 0;
-          width: 100%;
-        }
-      }
-    </style>
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="../index.html">
-          MP
-        </a>
+        <a class="brand" href="../index.html">MP</a>
         <nav class="nav">
           <a href="../index.html#about">About</a>
           <a href="../index.html#projects">Works</a>
@@ -109,22 +24,20 @@
       <article class="case-study">
         <div class="case-study-header">
           <div class="container">
-            <p class="breadcrumb">
-              <a href="../index.html#projects">← Back to projects</a>
-            </p>
+            <p class="breadcrumb"><a href="../index.html#projects">← Back to projects</a></p>
             <h1 class="case-study-title">Rapid Development Sprints:<br>Olive & Folio</h1>
             <div class="case-study-meta">
               <div class="meta-item">
-                <h2 class="meta-label">Role</h2>
-                <p>UX Designer & Flutter Developer</p>
+                <h2 class="meta-label">Timeline</h2>
+                <p>Two three-week sprints, 2025</p>
               </div>
               <div class="meta-item">
-                <h2 class="meta-label">Timeline</h2>
-                <p>Two 3-week sprints, 2025</p>
+                <h2 class="meta-label">Role</h2>
+                <p>UX designer and Flutter developer</p>
               </div>
               <div class="meta-item">
                 <h2 class="meta-label">Tools</h2>
-                <p>Flutter, Dart, Figma, Git</p>
+                <p>Figma, Flutter, Dart and Git</p>
               </div>
             </div>
           </div>
@@ -133,362 +46,65 @@
         <div class="case-study-content">
           <div class="container">
             <section class="content-section">
-              <h2 class="section-label">Overview</h2>
+              <h2 class="section-label">The Brief</h2>
               <div class="rich-text">
-                <p>These two mobile applications were developed during intense three-week sprints, designed to challenge our ability to rapidly conceptualize, design, and implement functional apps while maintaining code quality. The compressed timeline pushed us to make quick decisions, prioritize features effectively, and adapt our usual development processes.</p>
-
-                <h3>Sprint-Based Learning Approach</h3>
-                <ul>
-                  <li>Rapid prototyping and decision-making</li>
-                  <li>Focus on MVP (Minimum Viable Product)</li>
-                  <li>Quick research and user testing cycles</li>
-                  <li>Daily iterations and feedback loops</li>
-                  <li>Efficient Git workflows and collaboration</li>
-                </ul>
-
+                <p>These two mobile apps were created during short, focused development sprints. The constraint was to move from a clear user problem to a functional MVP quickly, while still making deliberate design and technical decisions.</p>
                 <figure class="case-study-figure case-study-grid">
                   <div>
-                    <img src="../images/olive-homepage.jpg" alt="Olive app interface showing recipe discovery screens" class="case-study-image">
-                    <figcaption>Olive: A recipe discovery app with swipe-based interaction</figcaption>
+                    <img src="../images/olive-homepage.jpg" alt="Olive recipe discovery app" class="case-study-image">
+                    <figcaption>Olive: recipe discovery through a swipe-based experience.</figcaption>
                   </div>
                   <div>
-                    <img src="../images/folio-homepage.jpg" alt="Folio app interface showing activity logging" class="case-study-image">
-                    <figcaption>Folio: A portfolio logging app with gamified progress tracking</figcaption>
+                    <img src="../images/folio-homepage.jpg" alt="Folio portfolio logging app" class="case-study-image">
+                    <figcaption>Folio: a mobile tool for capturing portfolio evidence.</figcaption>
                   </div>
                 </figure>
               </div>
             </section>
 
             <section class="content-section">
-              <h2 class="section-label">Olive: Recipe Discovery App</h2>
+              <h2 class="section-label">Olive</h2>
               <div class="rich-text">
-                <h3>Challenge & Context</h3>
-                <p>As a student myself, I often struggle with deciding what to cook every day. Many students face similar challenges:</p>
+                <p>Olive helps students find quick, affordable and nutritious meal inspiration. Research showed that students often spend too long deciding what to cook, while recipes are scattered across social platforms and difficult to save or revisit.</p>
                 <ul>
-                  <li>Decision fatigue when choosing meals</li>
-                  <li>Difficulty finding quick, affordable, and nutritious recipes</li>
-                  <li>Scattered recipe inspiration across various social platforms</li>
-                  <li>Lack of organization for saved recipes</li>
-                  <li>Incomplete recipe information on social media</li>
+                  <li>Swipe-based discovery for fast decision-making</li>
+                  <li>Clear recipe information instead of incomplete social posts</li>
+                  <li>A visual-first interface for low-effort browsing</li>
                 </ul>
-
-                <blockquote>
-                  How might we help students easily collect, save, and access meal inspiration through a mobile experience?
-                </blockquote>
-
-              </div>
-            </section>
-
-            <section class="content-section">
-              <h2 class="section-label">Folio: Portfolio Logging App</h2>
-              <div class="rich-text">
-                <h3>Challenge & Research</h3>
-                <p>I was tasked with designing and developing an app that uses mobile phones to make portfolio creation easier and more intuitive for students in our study. The portfolio we are required to create differs from a traditional one, as it serves as comprehensive proof of our work throughout the semester to show to our assessors, documenting every step and process rather than simply showcasing our best pieces.<br>
-                To better understand how students currently use their phones to assist with portfolio creation, documentation, and reflection, I conducted several interviews. The insights gathered revealed meaningful trends in how students approach portfolio work and engage in reflective practice:</p>
-
-                <ul>
-                  <li>Evidence is often stored in fragmented ways (screenshots, notes, folders)</li>
-                  <li>Most documentation happens on laptops, but phones are used for quick captures</li>
-                  <li>Re-writing notes into portfolios feels like repetitive work</li>
-                  <li>Students want better tagging and filtering options</li>
-                </ul>
-
-                <h3>Key User Needs</h3>
-                <ul>
-                  <li>Tagging system to connect evidence to projects and outcomes</li>
-                  <li>Easy sync between phone and laptop</li>
-                  <li>Reflection prompts and structured organization</li>
-                  <li>Motivation to make daily logs about what work was covered during that day.</li>
-                </ul>
-
-                <blockquote>
-                  Students confirmed that tagging by learning outcomes at the moment of capture would save time and reduce procrastination later.
-                </blockquote>
-              </div>
-            </section>
-
-            <section class="content-section">
-              <h2 class="section-label">User Research: Olive Recipe App</h2>
-              <div class="rich-text">
-                <h3>Interview Insights</h3>
-                <p>I conducted interviews with two university students to understand their cooking habits and recipe discovery processes:</p>
-                
-                <ul>
-                  <li>Luca (23, Italy) – Cooks 4-5 times weekly, prioritizes affordable, flavorful meals</li>
-                  <li>Veele (21, Netherlands) – Daily cook, focuses on healthy, low-effort meals</li>
-                </ul>
-
-                <h3>Key Findings</h3>
-                <ol>
-                  <li><strong>Decision Fatigue:</strong> Students spend excessive time choosing meals, often defaulting to familiar options.</li>
-                  <li><strong>Fragmented Discovery:</strong> Existing apps are paywalled or ad-heavy; social media recipes lack complete information.</li>
-                  <li><strong>Speed Priority:</strong> 30-minute meals using available ingredients are preferred.</li>
-                  <li><strong>Swipe Appeal:</strong> The "Tinder-for-recipes" concept received positive feedback for its playful, efficient approach.</li>
-                  <li><strong>Visual Focus:</strong> Clear imagery and minimal text are essential for quick decision-making.</li>
-                </ol>
-
                 <figure class="case-study-figure">
-                  <img src="../images/UX Persona (1).png" alt="User persona for Sarah Jackson" class="case-study-image">
-                  <figcaption>Sarah Jackson persona: A 22-year-old ICT student balancing studies with cooking healthy meals</figcaption>
+                  <img src="../images/prototype-3-olive.png" alt="Olive recipe app prototype" class="case-study-image">
+                  <figcaption>Prototype exploring the recipe discovery interaction.</figcaption>
                 </figure>
               </div>
             </section>
 
             <section class="content-section">
-              <h2 class="section-label">Design & Iteration Process</h2>
+              <h2 class="section-label">Folio</h2>
               <div class="rich-text">
-                <h3>Design Evolution & System Development</h3>
-                <p>Both apps went through extensive design iterations, focusing on user feedback and usability testing:</p>
-
-                <div class="iteration-timeline">
-                  <div class="iteration-phase">
-                    <h4>Olive Recipe Cards Evolution</h4>
-                    <div class="iteration-showcase">
-                      <figure class="case-study-figure">
-                        <img src="../images/prototype-1-olive.png" alt="Initial wireframes for Olive recipe cards" class="case-study-image">
-                        <figcaption>Initial wireframes exploring information hierarchy</figcaption>
-                      </figure>
-                      <figure class="case-study-figure">
-                        <img src="../images/prototype-2-olive.png" alt="Mid-fidelity prototype of Olive" class="case-study-image">
-                        <figcaption>Mid-fidelity prototype with refined interaction patterns</figcaption>
-                      </figure>
-                    </div>
-                  </div>
-
-                  <div class="iteration-phase">
-                    <h4>Folio App Evolution</h4>
-                    <div class="iteration-showcase">
-                      <figure class="case-study-figure">
-                        <img src="../images/folio-proto-1.png" alt="Initial wireframes for Folio app" class="case-study-image">
-                        <figcaption>Early exploration of quick-capture workflows</figcaption>
-                      </figure>
-                      <figure class="case-study-figure">
-                        <img src="../images/folio-proto-2.png" alt="Refined Folio interface" class="case-study-image">
-                        <figcaption>Refined interface with improved tagging system</figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-
-                <figure class="case-study-figure full-width-image">
-                  <img src="../images/ui-sheet-folio.jpg" alt="Folio UI component sheet showing design system" class="case-study-image">
-                  <figcaption>Comprehensive UI sheet showcasing Folio's design system and components</figcaption>
+                <p>Folio makes it easier for students to capture and organise evidence for their academic portfolios. Interviews showed that evidence is often fragmented across screenshots, notes and folders, creating repetitive work later.</p>
+                <ul>
+                  <li>Capture work close to the moment it happens</li>
+                  <li>Tag evidence to projects and learning outcomes</li>
+                  <li>Use prompts and structure to support reflection</li>
+                </ul>
+                <figure class="case-study-figure">
+                  <img src="../images/Folio-App-homepage.png" alt="Folio portfolio logging app interface" class="case-study-image">
+                  <figcaption>Folio interface for organising project evidence and reflections.</figcaption>
                 </figure>
-
-                <h3>UI Improvements</h3>
-                <div class="iteration-showcase">
-                  <div>
-                    <h4>Olive App</h4>
-                    <ul>
-                      <li><strong>Gesture Zones:</strong> Refined swipe areas to prevent accidental interactions</li>
-                      <li><strong>Information Density:</strong> Few details on card at first look with comprehensive recipe info when card is selected</li>
-                      <li><strong>Visual Hierarchy:</strong> Evolved from text-heavy to image-focused cards</li>
-                      <li><strong>Interaction Feedback:</strong> Added subtle animations for swipe actions</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4>Folio App</h4>
-                    <ul>
-                      <li><strong>Quick Capture:</strong> Reduced steps for easier evidence logging</li>
-                      <li><strong>Smart Tagging:</strong> Added tagging option for easy filtering by learning outcome</li>
-                      <li><strong>Visual Feedback:</strong> Implemented progress indicators and success states</li>
-                      <li><strong>Accessibility:</strong> Enhanced contrast ratios and touch target sizes</li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <h3>Recipe App User Testing Insights</h3>
-                <p>Conducted testing with 5 design students, leading to key improvements:</p>
-                <ul>
-                  <li>The colour palette is a bit too plain and lacks contrast</li>
-                  <li>Most said the layout is clear and easy to navigate</li>
-                  <li>The navigation between pages is good and the nav bar is fitting</li>
-                  <li>Discovery and saved recipe pages should have a search bar to easily find specific recipes</li>
-                </ul>
-
-                <h3>Design Iteration & Collaboration</h3>
-                <p>While working on this project, I had the opportunity to build upon my teammate's initial design work. Taking their foundation, I applied my UX/UI expertise to enhance the user experience:</p>
-
-                <div class="prototype-comparison">
-                  <figure class="case-study-figure full-width">
-                    <img src="../images/prototype-3-olive.png" alt="Before and after design iterations" class="case-study-image extra-large-prototype">
-                    <figcaption>Left: Original teammate's design | Right: My refined iteration</figcaption>
-                  </figure>
-                </div>
-
-                <style>
-                  .prototype-comparison {
-                    margin: 4rem -4rem; /* Larger negative margin to extend further */
-                    width: calc(100% + 8rem); /* Compensate for negative margins */
-                  }
-                  
-                  .prototype-comparison .case-study-figure.full-width {
-                    max-width: none;
-                    width: 100%;
-                    margin: 0;
-                  }
-                  
-                  .extra-large-prototype {
-                    max-height: 1000px !important; /* Much larger max-height */
-                    width: 100%;
-                    object-fit: contain;
-                    display: block;
-                    margin: 0 auto;
-                  }
-                  
-                  @media (max-width: 768px) {
-                    .prototype-comparison {
-                      margin: 2rem -2rem;
-                      width: calc(100% + 4rem);
-                    }
-                    .extra-large-prototype {
-                      max-height: 800px !important;
-                    }
-                  }
-                </style>
-
-                <h4>Key Design Changes</h4>
-                <ul>
-                  <li><strong>Border Radius:</strong> Changes the border radius to go back to 0 when text to text to make it look more cohesive. </li>
-                  <li><strong>Button Position:</strong> Changed the position of the 'heart' button to the right to make for sense when swiping.</li>
-                  <li><strong>Typography:</strong> Refined text styles and spacing for better readability. Before the same font was used for the Olive logo and in the UI. </li>
-                  <li><strong>Colour Palette:</strong> Adjusted the colour palette to make it more cohesive</li>
-                </ul>
-
-                <p>This collaborative iteration process helped create a more polished and user-friendly final product while maintaining the original concept's strengths. It showcases how different perspectives can enhance a design through thoughtful iteration.</p>
-
               </div>
             </section>
 
             <section class="content-section">
-              <h2 class="section-label">Implementation Highlights</h2>
+              <h2 class="section-label">Outcome</h2>
               <div class="rich-text">
-                <h3>Front-End Development</h3>
-                <p>Both apps were built with Flutter, focusing on creating smooth, intuitive user experiences:</p>
-
-                <div class="implementation-highlights">
-                  <div>
-                    <div class="rich-text">
-                <h3>Olive: Technical Architecture</h3>
-                <p>The recipe app was built with Flutter, implementing a clean architecture pattern:</p>
-                
-                <h4>Core Features</h4>
-                <ul>
-                  <li>Custom gesture detection system for Tinder-style recipe swiping</li>
-                  <li>Offline-first architecture with local recipe caching</li>
-                  <li>Filtering system (cuisine, cooking time, ingredients)</li>
-                  <li>Optimized image loading and caching for smooth scrolling</li>
-                </ul>
-
-                <h4>Technical Stack</h4>
-                <ul>
-                  <li>Flutter SDK with Material 3 design system</li>
-                  <li>TheMealDB API integration using Dio for network requests</li>
-                  <li>Hive NoSQL database for persistent storage</li>
-                  <li>Provider pattern for state management</li>
-                  <li>Get_it for dependency injection</li>
-                </ul>
-
-                <h4>Architecture Highlights</h4>
-                <ul>
-                  <li>Domain-driven design with clear separation of concerns</li>
-                  <li>Repository pattern for data abstraction</li>
-                  <li>Custom animation controllers for gesture feedback</li>
-                  <li>Reactive UI updates using ChangeNotifier</li>
-                </ul>
-
-
-                  <div>
-                    <h3>Folio Portfolio App</h3>
-                    <ul>
-                      <li>Streamlined media capture and tagging interface</li>
-                      <li>Real-time progress indicators and success states</li>
-                      <li>Intuitive navigation between capturing and organizing content</li>
-                      <li>Accessibility considerations in UI components</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <p>Want to see more? Check out the complete projects on GitLab:
-                  <a href="https://git.fhict.nl/I521945/recipe-app" target="_blank">Olive Repository</a> |
-                  <a href="https://git.fhict.nl/I524228/duo-case-1-14" target="_blank">Folio Repository</a>
-                </p>
-              
-
-                <h3>Collaborative Development</h3>
-                <p>The project utilized GitLab for version control, implementing:</p>
-                <ul>
-                  <li>Structured branching strategy for feature development</li>
-                  <li>Peer review process to maintain code quality</li>
-                  <li>AI-assisted work distribution between team members</li>
-                  <li>Regular integration checkpoints for feature validation</li>
-                </ul>
-              </div>
-            </section>
-
-            <section class="content-section">
-              <h2 class="section-label">Final Implementations</h2>
-              <div class="rich-text">
-                <p>The completed apps showcase the successful implementation of both the design and technical requirements:</p>
-                
-                <div class="iteration-showcase">
-                  <figure class="case-study-figure">
-                    <video controls class="case-study-video" poster="/images/olive-homepage.jpg">
-                      <source src="../images/recipe-video.MP4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                    <figcaption>Olive app in action: Recipe discovery and saving workflow</figcaption>
-                  </figure>
-                  <figure class="case-study-figure">
-                    <video controls class="case-study-video" poster="/images/Folio-App-homepage.png">
-                      <source src="../images/FOLIO-SCREENRECORD.mp4" type="video/mp4">
-                      <p>Your browser does not support the video tag. 
-                        <a href="/images/FOLIO-SCREENRECORD.mp4" download>Download the video</a> instead.
-                      </p>
-                    </video>
-                    <figcaption>Folio app demonstration: Quick capture and tagging process</figcaption>
-                  </figure>
-                </div>
-              </div>
-            </section>
-
-            <section class="content-section">
-              <h2 class="section-label">Outcomes</h2>
-              <div class="rich-text">
-                <p>The project delivered several key achievements:</p>
-                <ul>
-                  <li>Successfully implemented a Flutter-based recipe discovery app</li>
-                  <li>Created an intuitive, swipe-based interface for recipe browsing</li>
-                  <li>Integrated offline support for saved recipes</li>
-                  <li>Received positive feedback from student user testing</li>
-                </ul>
-
-                <blockquote>
-                  The swipe-based interface makes finding recipes fun and easy. It's like Tinder for food!
-                  <cite>- Student Tester</cite>
-                </blockquote>
-
-                <h3>Learning Through Constraints</h3>
-                <p>The three-week timeline for this project pushed me to adapt my typically thorough research and iteration process into a focused sprint. This constraint became a valuable learning opportunity:</p>
-                <ul>
-                  <li>Practiced rapid decision-making and prioritization of features</li>
-                  <li>Learned to conduct efficient user research with a smaller but focused participant group</li>
-                  <li>Developed skills in quick prototyping and iterative feedback loops</li>
-                  <li>Gained experience in adapting design processes to tight deadlines while maintaining quality</li>
-                </ul>
-
-                <p>This experience taught me how to be more adaptable and efficient in my design process while still delivering meaningful solutions. The compressed timeline helped me develop a more streamlined approach to user research and iteration, skills that will be valuable in future professional projects.</p>
+                <p>Both apps resulted in functional Flutter prototypes. Working under tight deadlines improved my ability to prioritise an MVP, test ideas quickly and make design decisions that could be implemented within the sprint.</p>
+                <p>The projects gave me practical experience connecting user research, interface design and front-end development in a collaborative Git workflow.</p>
               </div>
             </section>
 
             <div class="case-study-nav">
-              <a href="./center.html" class="prev-project">
-                ← Center Browser Extension
-              </a>
-              <a href="./nasmak.html" class="next-project">
-                Nasmak PM →
-              </a>
+              <a href="./nasmak.html" class="prev-project">← Nasmak PM</a>
+              <a href="./previous-portfolios.html" class="next-project">Previous portfolios →</a>
             </div>
           </div>
         </div>
@@ -497,14 +113,20 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <small>© 2025 Mila Pulvirenti - Built with HTML, CSS & JS</small>
-        <nav class="footer-nav">
+        <div class="footer-group">
+          <span class="footer-label">Get in touch</span>
           <a href="mailto:milapulvirenti@icloud.com">milapulvirenti@icloud.com</a>
-          <a href="https://linkedin.com/in/mila-pulvirenti" target="_blank">LinkedIn</a>
-        </nav>
+          <a href="tel:+31645533102">+31 6 45533102</a>
+        </div>
+        <div class="footer-group">
+          <span class="footer-label">Connect</span>
+          <a href="https://linkedin.com/in/mila-pulvirenti" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/m1lsy" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://instagram.com/milapulvirenti" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+        <small class="footer-credit">© 2026 Mila Pulvirenti</small>
       </div>
     </footer>
-
-    <script src="/js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

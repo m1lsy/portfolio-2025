@@ -231,9 +231,68 @@ body{
 
 .about{padding:3rem 0 6rem;color:var(--muted)}
 
-.site-footer{border-top:1px solid rgba(15,20,30,0.04);padding:1.6rem 0;background:transparent}
-.footer-inner{display:flex;align-items:center;justify-content:space-between;color:var(--muted)}
-.footer-nav a{color:var(--muted);margin-left:1rem;text-decoration:none}
+.site-footer {
+  position: relative;
+  overflow: hidden;
+  padding: 0.9rem 0;
+  border-top: 0;
+  background: #0F62FE;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) auto;
+  gap: 2rem;
+  align-items: start;
+  color: #ffffff;
+}
+
+.footer-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, max-content);
+  align-items: flex-start;
+  gap: 0.2rem 0.9rem;
+}
+
+.footer-label {
+  grid-column: 1 / -1;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.footer-group a,
+.footer-credit {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.85rem;
+}
+
+.footer-group a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-credit {
+  align-self: start;
+  white-space: nowrap;
+}
+
+.footer-group a:hover,
+.footer-group a:focus-visible {
+  color: #ffffff;
+}
+
+@media (max-width:600px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .footer-credit {
+    grid-column: 1 / -1;
+  }
+}
 
 @media (max-width:900px){
   .hero-inner{flex-direction:column-reverse}
@@ -258,9 +317,9 @@ body{
 }
 
 .case-study-title {
-  font-size: clamp(4rem, 10vw, 10rem);
+  font-size: clamp(2.75rem, 6vw, 6rem);
   line-height: 1.1;
-  margin: 0 0 3rem;
+  margin: 0 0 2rem;
   font-weight: 500;
   letter-spacing: -0.02em;
 }
@@ -382,6 +441,61 @@ body{
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
+}
+
+.store-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid #d8d6ce;
+  border-radius: 0.45rem;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.store-link:hover,
+.store-link:focus-visible {
+  border-color: #111111;
+  background: #e7ffa3;
+  color: var(--text);
+  transform: translateY(-2px);
+}
+
+.store-link-icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  flex: 0 0 auto;
+}
+
+.project-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 0.5rem 0 1rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid #d8d6ce;
+  border-radius: 0.45rem;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-cta:hover,
+.project-cta:focus-visible {
+  border-color: #111111;
+  background: #e7ffa3;
+  color: var(--text);
+  transform: translateY(-2px);
+}
+
+.project-cta-icon {
+  font-size: 0.75rem;
 }
 
 /* small utility */
@@ -1011,44 +1125,8 @@ body:has(.main-layout) .about-link {
   text-underline-offset: 0.3rem;
 }
 
-body:has(.main-layout) .skills {
-  padding-bottom: 6rem;
-  background: #f6f5f0;
-  box-shadow: 0 0 0 100vmax #f6f5f0;
-  clip-path: inset(0 -100vmax);
-}
-
-body:has(.main-layout) .skills-grid {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin-top: 0;
-}
-
-body:has(.main-layout) .skill-category,
-body:has(.main-layout) .skill-category:nth-child(3) {
-  width: auto;
-  max-width: none;
-  padding: 1.25rem 0;
-  border: 0;
-  border-top: 1px solid #d8d6ce;
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
-}
-
-body:has(.main-layout) .skill-category-title {
-  color: #111111;
-  font-size: 1rem;
-}
-
-body:has(.main-layout) .skill-list li {
-  border-bottom: 0;
-  color: #77756d;
-  font-size: 0.9rem;
-}
-
 body:has(.main-layout) .site-footer {
-  border-top: 1px solid #d8d6ce;
+  border-top: 0;
 }
 
 @media (max-width: 700px) {
@@ -1190,8 +1268,7 @@ body:has(.main-layout) .site-footer {
     margin-top: 0.35rem;
   }
 
-  body:has(.main-layout) .about-grid,
-  body:has(.main-layout) .skills-grid {
+  body:has(.main-layout) .about-grid {
     grid-template-columns: 1fr;
   }
 }

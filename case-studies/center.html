@@ -3,58 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Center Browser Extension - UX & React Development Case Study by Mila Pulvirenti</title>
+    <title>Center Browser Extension - Case Study by Mila Pulvirenti</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-    <style>
-      .video-wrapper {
-        position: relative;
-        width: 100%;
-        max-width: 1000px;
-        margin: 0 auto;
-        border-radius: 8px;
-        overflow: hidden;
-      }
-      .video-wrapper video {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-      .rich-text a {
-        color: #333;
-        text-decoration: none;
-        border-bottom: 2px solid #000000;
-        padding-bottom: 2px;
-        transition: all 0.2s ease;
-      }
-      .rich-text a:hover {
-        color: #000;
-        background-color: #e7ffa3;
-      }
-      .rich-text a:focus {
-        outline: 2px solid #e7ffa3;
-        outline-offset: 2px;
-      }
-      .rich-text a[target="_blank"]::after {
-        content: "↗";
-        display: inline-block;
-        margin-left: 4px;
-        font-size: 0.8em;
-        transition: transform 0.2s ease;
-      }
-      .rich-text a[target="_blank"]:hover::after {
-        transform: translate(2px, -2px);
-      }
-    </style>
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="../index.html">
-          MP
-        </a>
+        <a class="brand" href="../index.html">MP</a>
         <nav class="nav">
           <a href="../index.html#about">About</a>
           <a href="../index.html#projects">Works</a>
@@ -67,9 +24,7 @@
       <article class="case-study">
         <div class="case-study-header">
           <div class="container">
-            <p class="breadcrumb">
-              <a href="../index.html#projects">← Back to projects</a>
-            </p>
+            <p class="breadcrumb"><a href="../index.html#projects">← Back to projects</a></p>
             <h1 class="case-study-title">Center Browser Extension</h1>
             <div class="case-study-meta">
               <div class="meta-item">
@@ -78,10 +33,10 @@
               </div>
               <div class="meta-item">
                 <h2 class="meta-label">Role</h2>
-                <p>UX Research, Development</p>
+                <p>UX research, product design and React development</p>
               </div>
               <div class="meta-item">
-                <h2 class="meta-label">Recognition</h2>
+                <h2 class="meta-label">Outcome</h2>
                 <p>Best Digital Accessibility Concept</p>
               </div>
             </div>
@@ -91,198 +46,55 @@
         <div class="case-study-content">
           <div class="container">
             <section class="content-section">
-              <h2 class="section-label">Overview</h2>
+              <h2 class="section-label">The Brief</h2>
               <div class="rich-text">
-                <p>In this project, my team and I collaborated with our client Studio Krom, an innovative design and technology studio based in Eindhoven, to help make the digital world more accessible and inclusive.</p>
-
+                <p>Studio Krom challenged our team to explore digital accessibility and create a practical browser extension. We focused on people with ADHD, who can experience visual overload and difficulty maintaining focus in busy online environments.</p>
                 <figure class="case-study-figure">
-                  <img src="../images/center copy.jpg" alt="Center browser extension interface overview" class="case-study-image">
-                  <figcaption>Center: A browser extension designed to improve digital accessibility for users with ADHD</figcaption>
+                  <img src="../images/center copy.jpg" alt="Center browser extension interface" class="case-study-image">
+                  <figcaption>Center: a browser extension designed to make digital spaces easier to focus on.</figcaption>
                 </figure>
               </div>
             </section>
 
             <section class="content-section">
-              <h2 class="section-label">Challenge</h2>
+              <h2 class="section-label">Research & Direction</h2>
               <div class="rich-text">
-                <p>Accessibility is a broad and multifaceted topic, offering countless directions to explore. As a team, we quickly realized that trying to tackle the entire umbrella of accessibility would be overwhelming and difficult. We wanted to narrow it down to an aspect that felt personally relevant and potentially overlooked in mainstream conversations.</p>
-                <p>This led us to focus on ADHD - a condition that affects many people in our age group and immediate circles. Despite its prevalence, ADHD is often underrepresented in discussions around digital accessibility, making it a meaningful and impactful area for us to explore together with Studio Krom.</p>
-              </div>
-            </section>
-
-            <section class="content-section">
-              <h2 class="section-label">Research Process</h2>
-              <div class="rich-text">
-                <p>To kick off our project, we conducted library research alongside a series of interviews with individuals who have ADHD. Our goal was to gain a deeper understanding of their experiences and the challenges they face - especially in relation to digital accessibility.</p>
-                
-                <h3>Research Challenges</h3>
-                <p>To find participants for our interviews, I reached out to several sources:</p>
+                <p>I combined desk research with interviews to understand how people with ADHD manage clutter, distractions and long pages online. The main opportunity was to give users more control over what they see, rather than adding more information to an already busy screen.</p>
                 <ul>
-                  <li>Contacted Student+ at Fontys (limited by privacy policies)</li>
-                  <li>Posted in relevant Reddit forums (removed by moderators)</li>
-                  <li>Reached out to ADHD Café in Eindhoven</li>
+                  <li>Reduce visual overload and unnecessary distractions</li>
+                  <li>Support focus without forcing a single way of working</li>
+                  <li>Keep the extension simple enough to use during everyday browsing</li>
                 </ul>
-                
-                <p>Despite these setbacks, I was still able to connect with individuals from my own network who were open to sharing their experiences.</p>
-
-                <blockquote>
-                  "If I see everything on the screen at once, it's an overload - I start bouncing from one thing to the next. But if I can choose what I want to see, I can focus better. Out of sight, out of mind works both ways for me."
-                  <cite>- Individual with ADHD</cite>
-                </blockquote>
-              </div>
-            </section>
-
-            <section class="content-section">
-              <h2 class="section-label">Key Findings</h2>
-              <div class="rich-text">
-                <p>Through my research, I discovered that individuals with ADHD often experience:</p>
-                <ul>
-                  <li>Heightened sensitivity to visual stimuli</li>
-                  <li>Feelings of overwhelm in cluttered digital environments</li>
-                  <li>Development of personal coping mechanisms</li>
-                  <li>Need for specialized tools for organization and focus</li>
-                </ul>
-              </div>
-            </section>
-
-            <section class="content-section">
-              <h2 class="section-label">Design Process</h2>
-              <div class="rich-text">
-                <h3>1. Initial Concept Development</h3>
-                <p>We began with mood boards and visual research to establish the design direction for our extension:</p>
-
                 <figure class="case-study-figure">
-                  <img src="../images/Moodboard-Center.jpg" alt="Mood board exploring visual direction for Center" class="case-study-image">
-                  <figcaption>Initial mood board exploring minimalist and focused design aesthetics</figcaption>
-                </figure>
-
-                <h3>2. Wireframing & Low-Fidelity Prototypes</h3>
-                <p>We explored various layouts and interaction patterns through wireframes:</p>
-
-                <figure class="case-study-figure">
-                  <img src="../images/mockup-wireframe-center.jpeg" alt="Early wireframes for Center extension" class="case-study-image" style="object-fit: contain; width: 100%; max-height: 500px;">
-                </figure>
-                
-                <figure class="case-study-figure">
-                  <img src="../images/mockup-for-lo3.jpg" alt="Low-fidelity mockup exploration" class="case-study-image">
-                </figure>
-
-                <h3>3. Interface Iterations</h3>
-                <p>Based on user feedback and client input, we refined the interface design:</p>
-
-                <figure class="case-study-figure">
-                  <img src="../images/final-iteration-center.jpg" alt="Refined interface design" class="case-study-image">
-                  <figcaption>Interface iteration focusing on clarity and minimal distractions</figcaption>
-                </figure>
-
-                <h3>4. Final Design</h3>
-                <p>Our final interface design prioritized simplicity and focus:</p>
-
-                <figure class="case-study-figure">
-                  <img src="../images/final-center-iteration-2.jpg" alt="Final interface design for Center extension" class="case-study-image">
-                  <figcaption>Final interface design emphasizing clean layout and essential features</figcaption>
-                </figure>
-
-                <h3>5. Project Communication</h3>
-                <p>We developed a series of posters to raise awareness about digital accessibility and showcase our product:</p>
-
-                <figure class="case-study-figure case-study-grid">
-                  <img src="../images/poster-mockup-1.png" alt="Initial poster concept for Center" class="case-study-image">
-                  <img src="../images/poster-2.png" alt="Final poster design for Center" class="case-study-image">
-                </figure>
-
-                <p>These posters helped communicate our vision to stakeholders and explain how Center addresses digital accessibility challenges for users with ADHD.</p>
-
-                <blockquote>
-                  "I found your presentation to be very professional... All of the features you proposed were strong, but my advice is to focus on the web page condenser and the Pomodoro timer. Keep in mind the 'Swiss Army Knife Complex': sometimes having too many features can dilute the impact."
-                  <cite>- Joris, Studio Krom</cite>
-                </blockquote>
-              </div>
-            </section>
-
-            <section class="content-section">
-              <h2 class="section-label">Development</h2>
-              <div class="rich-text">
-                <p>For the development phase, we focused on quality over quantity, choosing to implement two core features thoroughly rather than multiple features superficially. I worked with my teammate Yurick on the timer feature, including both styling and functionality.</p>
-                
-                <p>Key technical challenges included:</p>
-                <ul>
-                  <li>First experience with React framework</li>
-                  <li>Collaborative development workflows</li>
-                  <li>Git version control</li>
-                  <li>Browser extension architecture</li>
-                </ul>
-
-                <p>The final implementation included:</p>
-                <ul>
-                  <li>Functional stopwatch component</li>
-                  <li>Pomodoro timer with customizable settings</li>
-                  <li>AI-powered text summarizer</li>
-                  <li>User preference settings</li>
-                </ul>
-
-                <h3>Source Code</h3>
-                <p>The project's source code is available in our university's GitLab repository: <a href="https://git.fhict.nl/I524911/project-center" target="_blank">git.fhict.nl/I524911/project-center</a></p>
-                <p><em>Note: This is an internal Fontys University repository and may require appropriate credentials for access. Please contact me directly if you need to access it.</em></p>
-              </div>
-            </section>
-
-            <section class="content-section">
-              <h2 class="section-label">User Testing</h2>
-              <div class="rich-text">
-                <p>We conducted extensive user testing to validate our design decisions:</p>
-
-                <figure class="case-study-figure">
-                  <img src="../images/USER-TEST-CENTER.png" alt="User testing session results and feedback" class="case-study-image">
-                  <figcaption>User testing results highlighting key insights and improvements</figcaption>
+                  <img src="../images/Moodboard-Center.jpg" alt="Center visual direction mood board" class="case-study-image">
+                  <figcaption>Visual direction focused on clarity, calm and minimal distraction.</figcaption>
                 </figure>
               </div>
             </section>
 
             <section class="content-section">
-              <h2 class="section-label">Recognition & Outcome</h2>
+              <h2 class="section-label">Solution</h2>
               <div class="rich-text">
-                <p>The project culminated in winning the award for Best Digital Accessibility Concept during the final demo presentations.</p>
-
+                <p>We prioritised two core features instead of building a large collection of tools: a web-page condenser to reduce long content and a Pomodoro timer to support focused work. I worked with my teammate Yurick on the timer's interface and functionality.</p>
                 <figure class="case-study-figure">
-                  <img src="../images/krom-winner.jpg" alt="Center winning Best Digital Accessibility Concept" class="case-study-image">
-                  <figcaption>Center receiving the Best Digital Accessibility Concept award</figcaption>
+                  <img src="../images/final-center-iteration-2.jpg" alt="Final Center browser extension interface" class="case-study-image">
+                  <figcaption>Final interface iteration with a focused layout and clear controls.</figcaption>
                 </figure>
+              </div>
+            </section>
 
-                <p>This success was driven by:</p>
-                <ul>
-                  <li>Strong team collaboration with minimal conflicts</li>
-                  <li>Excellent client relationship with Studio Krom</li>
-                  <li>Regular feedback sessions and iterations</li>
-                  <li>Focus on quality over feature quantity</li>
-                </ul>
-                <p>This project was particularly meaningful as it created a tool that continues to be useful beyond the academic context. The extension successfully helps users with ADHD navigate digital spaces more effectively while maintaining focus and productivity.</p>
-
-                <blockquote>
-                  The Center extension demonstrates how thoughtful design and focused features can make a real difference in digital accessibility.
-                  <cite>- Studio Krom</cite>
-                </blockquote>
-
-                <h3>Final Product Demo</h3>
-                <figure class="case-study-figure">
-                  <div class="video-wrapper">
-                    <video controls width="100%">
-                      <source src="../images/center-demo.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <figcaption>Demo of the Center extension showing the focus mode and timer features in action</figcaption>
-                </figure>
+            <section class="content-section">
+              <h2 class="section-label">Result</h2>
+              <div class="rich-text">
+                <p>Center combined a focused interface with a small set of useful tools: a condenser, Pomodoro timer, AI text summariser and preference settings. The project won the Best Digital Accessibility Concept award during the final presentations.</p>
+                <p>This project strengthened my experience with user research, feature prioritisation, interface iteration, React and collaborative Git workflows.</p>
+                <p><a href="https://git.fhict.nl/I524911/project-center" target="_blank" rel="noreferrer">View the project source code →</a></p>
               </div>
             </section>
 
             <div class="case-study-nav">
-              <a href="./nasmak.html" class="prev-project">
-                ← Nasmak PM
-              </a>
-              <a href="./olive.html" class="next-project">
-                Olive Recipe App →
-              </a>
+              <a href="./living-narratives.html" class="prev-project">← Living Narratives</a>
+              <a href="./nasmak.html" class="next-project">Nasmak PM →</a>
             </div>
           </div>
         </div>
@@ -291,14 +103,20 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <small>© 2025 Mila Pulvirenti - Built with HTML, CSS & JS</small>
-        <nav class="footer-nav">
+        <div class="footer-group">
+          <span class="footer-label">Get in touch</span>
           <a href="mailto:milapulvirenti@icloud.com">milapulvirenti@icloud.com</a>
-          <a href="https://linkedin.com/in/mila-pulvirenti" target="_blank">LinkedIn</a>
-        </nav>
+          <a href="tel:+31645533102">+31 6 45533102</a>
+        </div>
+        <div class="footer-group">
+          <span class="footer-label">Connect</span>
+          <a href="https://linkedin.com/in/mila-pulvirenti" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/m1lsy" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://instagram.com/milapulvirenti" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+        <small class="footer-credit">© 2026 Mila Pulvirenti</small>
       </div>
     </footer>
-
-    <script src="/js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
