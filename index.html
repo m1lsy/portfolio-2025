@@ -9,172 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
-    <style>
-      /* Global enhancements */
-      body {
-        background-color: #fafafa !important;
-        position: relative;
-      }
-
-      /* Subtle background pattern */
-      body::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.02) 1px, transparent 0);
-        background-size: 20px 20px;
-        pointer-events: none;
-        z-index: -1;
-      }
-
-      /* Add subtle animations to project links */
-      .project-link {
-        position: relative;
-        overflow: hidden;
-      }
-
-      .project-link::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(231, 255, 163, 0.1), transparent);
-        transition: left 0.5s ease;
-      }
-
-      .project-link:hover::before {
-        left: 100%;
-      }
-
-      /* Enhanced hero section */
-      .hero {
-        position: relative;
-        min-height: 70vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-
-      /* Move banner up to create scroll incentive */
-      .availability-banner {
-        position: relative;
-        margin-top: -10vh;
-      }
-
-      .hero::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: -50px;
-        width: 200px;
-        height: 200px;
-        background: linear-gradient(135deg, #e7ffa3, #d4edda);
-        border-radius: 50%;
-        opacity: 0.1;
-        z-index: -1;
-      }
-
-      /* Floating accent elements */
-      .availability-banner::before {
-        content: '';
-        position: absolute;
-        top: -20px;
-        left: 20px;
-        width: 40px;
-        height: 40px;
-        background: #e7ffa3;
-        border-radius: 50%;
-        opacity: 0.3;
-        z-index: -1;
-      }
-
-      /* Section dividers */
-      .section-label::after {
-        content: '';
-        display: block;
-        width: 60px;
-        height: 2px;
-        background: linear-gradient(90deg, #e7ffa3, transparent);
-        margin-top: 0.5rem;
-      }
-
-      /* Enhanced cards */
-      .skill-category {
-        position: relative;
-        background: white !important;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-      }
-
-      .skill-category::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 4px;
-        height: 100%;
-        background: linear-gradient(180deg, #e7ffa3, #d4edda);
-        border-radius: 0 4px 4px 0;
-      }
-
-      /* About section background */
-      .about {
-        background: white;
-        border-radius: 12px;
-        padding: 3rem;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-        position: relative;
-      }
-
-      .about::before {
-        content: '';
-        position: absolute;
-        top: -10px;
-        right: -10px;
-        width: 50px;
-        height: 50px;
-        background: #e7ffa3;
-        border-radius: 50%;
-        opacity: 0.2;
-        z-index: -1;
-      }
-
-      /* Subtle hover effects for navigation */
-      .nav a {
-        position: relative;
-        transition: all 0.3s ease;
-      }
-
-      .nav a::after {
-        content: '';
-        position: absolute;
-        bottom: -4px;
-        left: 50%;
-        width: 0;
-        height: 2px;
-        background: #e7ffa3;
-        transition: all 0.3s ease;
-        transform: translateX(-50%);
-      }
-
-      .nav a:hover::after {
-        width: 100%;
-      }
-
-      @media (max-width: 768px) {
-        .hero::after {
-          display: none;
-        }
-        
-        .about {
-          padding: 2rem;
-        }
-      }
-    </style>
   </head>
   <body>
     <header class="site-header">
@@ -193,162 +27,122 @@
     <main>
       <div class="container main-layout">
         <section class="hero">
-          <h1 class="display">
-            I'm Mila<br>
-            Pulvirenti.
-          </h1>
-          <p class="hero-text">
-            I am an aspiring UX designer and front-end developer based in Eindhoven, Netherlands. Open for work opportunities.
-          </p>
+          <div class="hero-art">
+            <div class="hero-note hero-note-companies">
+              <span>Currently exploring</span>
+              Human-centred design<br>
+              Touch Designer<br>
+              Mobile app development<br>
+              Digital experiences
+            </div>
+            <div class="hero-note hero-note-about">
+              <span>A little context</span>
+               Hi, I'm Mila Pulvirenti<br>
+              Durban, SA → Eindhoven, NL<br>
+              ICT & Media Design<br>
+              UX / frontend / curious
+            </div>
+            <h1 class="display">
+              <img class="hero-image" src="./images/mila-yellow.png" alt="Mila">
+            </h1>
+            <span class="hero-tag hero-tag-one">ux designer</span>
+            <span class="hero-tag hero-tag-two">visual designer</span>
+            <span class="hero-tag hero-tag-three">front end developer</span>
+            <span class="hero-tag hero-tag-four">creative coder</span>
+            <span class="hero-signature">MP / 26</span>
+          </div>
         </section>        <div class="availability-banner">
           <div class="banner-track">
             <div class="banner-content">
-              <span>LOOKING FOR UX/UI OR FRONT END INTERNSHIP</span>
-              <span class="bullet">•</span>
-              <span>STARTING FEBRUARY 2026</span>
-              <span class="bullet">•</span>
-              <span>LOOKING FOR UX/UI OR FRONT END INTERNSHIP</span>
-              <span class="bullet">•</span>
-              <span>STARTING FEBRUARY 2026</span>
-              <span class="bullet">•</span>
+              <span>LOOKING FOR A GRADUATION INTERNSHIP</span>
+              <span class="bullet">→</span>
+              <span>STARTING SEPTEMBER 2027</span>
+              <span class="bullet">→</span>
+            </div>
+            <div class="banner-content" aria-hidden="true">
+              <span>LOOKING FOR A GRADUATION INTERNSHIP</span>
+              <span class="bullet">→</span>
+              <span>STARTING SEPTEMBER 2027</span>
+              <span class="bullet">→</span>
             </div>
           </div>
         </div>
-        
+
+        <section class="statement-band" aria-label="Design approach">
+          <p class="statement-kicker">The short version</p>
+          <h2>I make digital experiences that are <em>clear, bold</em> and worth remembering.</h2>
+          <p class="statement-detail">UX thinking, front-end craft and a soft spot for the details people notice without knowing why.</p>
+          <div class="statement-interests">
+            <strong>I'm interested in <span aria-hidden="true">→</span></strong>
+            <div class="interest-list" aria-label="Areas of interest">
+              <span>Digital design</span>
+              <span>Music &amp; film</span>
+              <span>Art &amp; culture</span>
+              <span>Food</span>
+              <span>Creative coding</span>
+            </div>
+          </div>
+        </section>
+
+        <div class="work-marquee" aria-hidden="true">
+          <span>WORK</span><span>↓</span><span>WORK</span><span>↓</span><span>WORK</span><span>↓</span><span>WORK</span><span>↓</span><span>WORK</span><span>↓</span><span>WORK</span><span>↓</span>
+        </div>
+
         <section id="projects" class="projects-list">
-          <h2 class="section-label">Selected Projects</h2>
+          <div class="work-heading">
+            <h2 class="section-label">Selected Projects</h2>
+            <p>Ideas turned into interfaces, prototypes and working products.</p>
+          </div>
           <div class="project-links">
-            <a href="./case-studies/center.html" class="project-link">
-              <span class="project-title">Center Browser Extension</span>
+            <a href="./images/nantes-new.jpeg" class="project-link" target="_blank" rel="noreferrer">
+              <img class="project-image" src="./images/nantes-new.jpeg" alt="Living Narratives project preview">
+              <span class="project-copy"><span class="project-title">Living Narratives</span><span class="project-meta">UX / Digital experience</span></span>
               <span class="arrow">→</span>
             </a>
-            <a href="./case-studies/olive.html" class="project-link">
-              <span class="project-title">Olive & Folio Apps</span>
+            <a href="./case-studies/wildlifenl-case-study.html" class="project-link">
+              <img class="project-image" src="./images/handrapport.jpeg" alt="WildRapport & WildGids Apps project preview">
+              <span class="project-copy"><span class="project-title">WildRapport & WildGids Apps</span><span class="project-meta">UI / Development</span></span>
+              <span class="arrow">→</span>
+            </a>
+            <a href="./case-studies/center.html" class="project-link">
+              <img class="project-image" src="./images/mockup-center.jpg" alt="Center Browser Extension project preview">
+              <span class="project-copy"><span class="project-title">Center Browser Extension</span><span class="project-meta">UX / Product design</span></span>
               <span class="arrow">→</span>
             </a>
             <a href="./case-studies/nasmak.html" class="project-link">
-              <span class="project-title">Nasmak PM Recorder</span>
+              <img class="project-image" src="./images/nasmak-instapic.jpg" alt="Nasmak PM Recorder project preview">
+              <span class="project-copy"><span class="project-title">Nasmak PM Recorder</span><span class="project-meta">Research / Development</span></span>
               <span class="arrow">→</span>
             </a>
             <a href="./case-studies/previous-portfolios.html" class="project-link">
-              <span class="project-title">Previous Portfolios</span>
+              <img class="project-image" src="./images/comment-code.jpg" alt="Previous portfolio project preview">
+              <span class="project-copy"><span class="project-title">Previous Portfolios</span><span class="project-meta">Archive</span></span>
               <span class="arrow">→</span>
             </a>
           </div>
         </section>
 
       <section id="about" class="container about">
-        <h2 class="section-label">About</h2>
+        <div class="about-topline">
+          <span>About / 01</span>
+          <span>Get to know me</span>
+        </div>
+        <div class="about-heading">
+          <h2 class="about-display">Hey there<span>.</span></h2>
+        </div>
         <div class="about-grid">
           <div class="about-content">
-            <p class="about-text">I'm a UX designer and front-end developer based in Eindhoven, Netherlands but originally from Durban, South Africa. I enjoy working on projects that combine clean aesthetics with human-centred interactions.</p>
-            <p class="about-text">Currently studying ICT & Media Design at Fontys University, I'm passionate about creating digital experiences that make a difference. I believe in thorough user research, clean code, and pixel-perfect design implementations.</p>
+            <p class="about-text">I'm Mila — a UX designer and front-end developer based in Eindhoven, Netherlands, originally from Durban, South Africa. I like turning thoughtful ideas into clear, expressive experiences that people enjoy using.</p>
+            <p class="about-text">Currently studying ICT &amp; Media Design at Fontys University, I work across research, interface design and code. I care about the details, the weird little sparks of personality, and making sure the final thing actually works.</p>
             <div class="about-links">
-              <a href="https://github.com/m1lsy" target="_blank" class="about-link">GitHub ↗</a>
-              <a href="https://www.linkedin.com/in/mila-pulvirenti" target="_blank" class="about-link">LinkedIn ↗</a>
+              <a href="https://github.com/m1lsy" target="_blank" rel="noreferrer" class="about-link">GitHub <span>↗</span></a>
+              <a href="https://www.linkedin.com/in/mila-pulvirenti" target="_blank" rel="noreferrer" class="about-link">LinkedIn <span>↗</span></a>
             </div>
           </div>
           <div class="about-image">
-            <img src="./images/mila-pic.jpg" alt="Mila Pulvirenti" class="portrait">
+            <img src="./images/newmilapic.jpg" alt="Mila Pulvirenti" class="portrait">
           </div>
         </div>
-
-        <style>
-          .about {
-            margin-top: 6rem;
-            padding-bottom: 4rem;
-          }
-
-          .about-grid {
-            display: grid;
-            grid-template-columns: 1.5fr minmax(300px, 1fr);
-            gap: 4rem;
-            margin-top: 2rem;
-            align-items: start;
-          }
-
-          .about-image {
-            position: relative;
-          }
-
-          .about-image::after {
-            content: '';
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            left: -1rem;
-            bottom: -1rem;
-            background: #e7ffa3;
-            z-index: 1;
-            border-radius: 4px;
-          }
-
-          .portrait {
-            width: 100%;
-            height: auto;
-            border-radius: 4px;
-            position: relative;
-            z-index: 2;
-            filter: grayscale(100%);
-            transition: all 0.3s ease;
-          }
-
-          .portrait:hover {
-            filter: grayscale(0%);
-            transform: translate(4px, -4px);
-          }
-
-          .about-content {
-            padding-top: 1rem;
-          }
-
-          .about-text {
-            font-size: 1.125rem;
-            line-height: 1.6;
-            color: #333;
-            margin-bottom: 1.5rem;
-          }
-
-          .about-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 2rem;
-          }
-
-          .about-link {
-            display: inline-flex;
-            align-items: center;
-            padding: 0.75rem 1.25rem;
-            background: #f8f8f8;
-            color: #333;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 500;
-            transition: all 0.2s ease;
-            border: 1px solid #eee;
-          }
-
-          .about-link:hover {
-            background: #e7ffa3;
-            transform: translateY(-2px);
-          }
-
-          @media (max-width: 768px) {
-            .about-grid {
-              grid-template-columns: 1fr;
-              gap: 2rem;
-            }
-
-            .about-image {
-              max-width: 400px;
-              margin: 0 auto;
-            }
-
-            .about-content {
-              padding-top: 1rem;
-            }
-          }
-        </style>
       </section>
 
       <section id="skills" class="container skills">
@@ -389,81 +183,12 @@
           </div>
         </div>
 
-        <style>
-          .skills {
-            margin-top: 6rem;
-            padding-bottom: 4rem;
-          }
-
-          .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto;
-            gap: 3rem;
-            margin-top: 2rem;
-          }
-
-          .skill-category:nth-child(3) {
-            grid-column: 1 / -1;
-            justify-self: center;
-            width: 100%;
-            max-width: calc(50% - 1.5rem);
-          }
-
-          .skill-category {
-            background: #f8f8f8;
-            padding: 2rem;
-            border-radius: 8px;
-            border: 1px solid #eee;
-            transition: all 0.2s ease;
-          }
-
-          .skill-category:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-          }
-
-          .skill-category-title {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: #333;
-          }
-
-          .skill-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-          }
-
-          .skill-list li {
-            padding: 0.5rem 0;
-            color: #555;
-            border-bottom: 1px solid #eee;
-            transition: color 0.2s ease;
-          }
-
-          .skill-list li:last-child {
-            border-bottom: none;
-          }
-
-          .skill-list li:hover {
-            color: #333;
-          }
-
-          @media (max-width: 768px) {
-            .skills-grid {
-              grid-template-columns: 1fr;
-              gap: 2rem;
-            }
-          }
-        </style>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <small>© 2025 Mila Pulvirenti - Built with HTML, CSS & JS</small>
+        <small>© 2025 Mila Pulvirenti</small>
         <nav class="footer-nav">
           <a href="mailto:milapulvirenti@icloud.com">milapulvirenti@icloud.com</a>
           <a href="https://linkedin.com/in/mila-pulvirenti" target="_blank">LinkedIn</a>

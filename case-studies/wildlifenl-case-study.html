@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WildlifeNL: WildGids & WildRapport - Case Study by Mila Pulvirenti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+      .rich-text a {
+        color: #333;
+        text-decoration: none;
+        border-bottom: 2px solid #e7ffa3;
+        padding-bottom: 2px;
+        transition: all 0.2s ease;
+      }
+      .rich-text a:hover {
+        color: #000;
+        background-color: #e7ffa3;
+      }
+      .rich-text a:focus {
+        outline: 2px solid #e7ffa3;
+        outline-offset: 2px;
+      }
+      .rich-text a[target="_blank"]::after {
+        content: "↗";
+        display: inline-block;
+        margin-left: 4px;
+        font-size: 0.8em;
+        transition: transform 0.2s ease;
+      }
+      .rich-text a[target="_blank"]:hover::after {
+        transform: translate(2px, -2px);
+      }
+      .iteration-showcase {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin: 2rem 0;
+      }
+      .iteration-showcase img,
+      .iteration-showcase video {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        max-height: 600px;
+        border-radius: 8px;
+      }
+      .case-study-video {
+        width: 100%;
+        background: #f5f5f5;
+        border-radius: 8px;
+      }
+      .iteration-timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .iteration-phase {
+        background: #f5f5f5;
+        padding: 2rem;
+        border-radius: 8px;
+      }
+      .full-width-image {
+        margin: 2rem -2rem;
+        width: calc(100% + 4rem);
+      }
+      .full-width-image img {
+        width: 100%;
+        height: auto;
+      }
+      .process-step {
+        display: grid;
+        grid-template-columns: 72px 1fr;
+        gap: 1.25rem;
+        align-items: start;
+        margin: 1.5rem 0;
+      }
+      .process-number {
+        font-size: 2rem;
+        line-height: 1;
+        font-weight: 600;
+        color: #5b7b39;
+      }
+      @media (max-width: 768px) {
+        .iteration-showcase {
+          grid-template-columns: 1fr;
+        }
+        .full-width-image {
+          margin: 2rem 0;
+          width: 100%;
+        }
+        .process-step {
+          grid-template-columns: 48px 1fr;
+          gap: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html">MP</a>
+        <nav class="nav">
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#projects">Works</a>
+          <a href="../index.html#skills">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="case-study">
+        <div class="case-study-header">
+          <div class="container">
+            <p class="breadcrumb">
+              <a href="../index.html#projects">← Back to projects</a>
+            </p>
+            <h1 class="case-study-title">WildlifeNL:<br>WildGids & WildRapport</h1>
+            <div class="case-study-meta">
+              <div class="meta-item">
+                <h2 class="meta-label">Role</h2>
+                <p>UX/UI Designer & Front-End Developer</p>
+              </div>
+              <div class="meta-item">
+                <h2 class="meta-label">Timeline</h2>
+                <p>February – June 2026 · Internship</p>
+              </div>
+              <div class="meta-item">
+                <h2 class="meta-label">Tools</h2>
+                <p>Figma, Flutter, Dart, Git, GitHub</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-study-content">
+          <div class="container">
+            <section class="content-section">
+              <h2 class="section-label">Overview</h2>
+              <div class="rich-text">
+                <p>During my internship at inMotionVR / GAMR, I worked on WildlifeNL, a project with two related mobile applications: WildGids and WildRapport. My role focused on UX/UI design and front-end development. I worked on making the apps easier to understand and use, while also implementing interface changes in Flutter.</p>
+                <p>The work involved more than adding new screens. I had to understand the existing apps, identify places where the experience could be clearer, and balance design improvements with the structure and technical requirements of an existing codebase. I collaborated with the development team and used feedback from the project stakeholders to guide decisions.</p>
+
+                <h3>My focus</h3>
+                <ul>
+                  <li>Reviewing and improving existing app interfaces and navigation</li>
+                  <li>Designing clear flows for wildlife observations and incident reports</li>
+                  <li>Translating UI decisions into Flutter components and screens</li>
+                  <li>Working with Git branches to keep development tasks organised</li>
+                  <li>Iterating on the interface while considering stakeholder feedback and technical constraints</li>
+                </ul>
+
+                <figure class="case-study-figure case-study-grid">
+                  <div>
+                    <img src="../images/wildgids-overview.png" alt="WildGids mobile app overview" class="case-study-image">
+                    <figcaption>WildGids: a map-first experience for exploring wildlife information and observations</figcaption>
+                  </div>
+                  <div>
+                    <img src="../images/wildrapport-overview.png" alt="WildRapport mobile app overview" class="case-study-image">
+                    <figcaption>WildRapport: an app for recording and managing wildlife reports</figcaption>
+                  </div>
+                </figure>
+                <p><em>Replace the image paths above with your actual screenshots or mock-ups before publishing.</em></p>
+              </div>
+            </section>
+
+            <section class="content-section">
+              <h2 class="section-label">The Challenge</h2>
+              <div class="rich-text">
+                <h3>Working with existing products</h3>
+                <p>Both apps already had their own purpose and structure, so the challenge was to improve the experience without treating them as completely new products. I needed to understand how people would move through the apps, which actions should be easy to find, and how the different reporting tasks should be presented.</p>
+                <p>For me, this meant looking at the experience from both a design and implementation perspective. A layout could look good in Figma, but it also needed to work within the existing Flutter project and make sense alongside the other screens.</p>
+                <blockquote>
+                  How can I make the main actions in WildGids and WildRapport easier to find and use, while keeping the interface consistent with the existing products?
+                </blockquote>
+              </div>
+            </section>
+
+            <section class="content-section">
+              <h2 class="section-label">Understanding the Apps</h2>
+              <div class="rich-text">
+                <h3>WildGids: start with the map</h3>
+                <p>For WildGids, I focused on making the map central to the experience. The map is a natural starting point for exploring wildlife and observations, so the navigation should support that behaviour rather than make users search for the main content.</p>
+                <ul>
+                  <li>Prioritising the map as the main entry point</li>
+                  <li>Making the observation action easier to discover</li>
+                  <li>Thinking about how users move between exploring and recording information</li>
+                </ul>
+
+                <h3>WildRapport: make reporting easier to understand</h3>
+                <p>WildRapport supports different types of reports. I worked with the structure around the main reporting categories and their place in the overall navigation.</p>
+                <ul>
+                  <li><strong>Waarneming:</strong> recording a wildlife observation</li>
+                  <li><strong>Schademelding:</strong> reporting damage</li>
+                  <li><strong>Dieraanrijding:</strong> reporting an animal collision</li>
+                </ul>
+                <p>These are different tasks, so the interface needs to help users recognise which report they should create and understand where to go next.</p>
+
+                <figure class="case-study-figure">
+                  <img src="../images/wildlife-user-flows.png" alt="WildlifeNL app user flows and navigation planning" class="case-study-image">
+                  <figcaption>Use this space for your user-flow, navigation or planning screenshot.</figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section class="content-section">
+              <h2 class="section-label">My Process</h2>
+              <div class="rich-text">
+                <p>I approached the work as an ongoing cycle of understanding, designing, implementing and reviewing. Since I was working within existing applications, I needed to build on what was already there instead of designing in isolation.</p>
+
+                <div class="iteration-timeline">
+                  <div class="iteration-phase">
+                    <div class="process-step">
+                      <div class="process-number">01</div>
+                      <div>
+                        <h3>Explore the existing experience</h3>
+                        <p>I started by familiarising myself with the current screens, navigation and codebase. This helped me understand how the apps were structured and where the main user actions sat within each experience.</p>
+                        <p><strong>Evidence to add:</strong> screenshots of the original interfaces, notes from your review, or a map of the existing navigation.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="iteration-phase">
+                    <div class="process-step">
+                      <div class="process-number">02</div>
+                      <div>
+                        <h3>Identify the UX/UI improvements</h3>
+                        <p>I considered the hierarchy of the screens, the visibility of key actions, and whether the navigation matched what users needed to do. For WildGids, this included the map-first direction and making Waarneming easier to reach. For WildRapport, I focused on the structure around the different report types and the wider navigation.</p>
+                        <p><strong>Evidence to add:</strong> annotated screenshots, Figma explorations, or before-and-after comparisons that show the specific problems you identified.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="iteration-phase">
+                    <div class="process-step">
+                      <div class="process-number">03</div>
+                      <div>
+                        <h3>Design and refine the interface</h3>
+                        <p>I used Figma to explore and communicate interface changes before or alongside implementation. I considered consistency across screens, clear hierarchy and how the WildlifeNL visual style could be used without making the interface feel visually heavy.</p>
+                        <p><strong>Evidence to add:</strong> wireframes, revised screens, component explorations or a small design-system overview.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="iteration-phase">
+                    <div class="process-step">
+                      <div class="process-number">04</div>
+                      <div>
+                        <h3>Implement in Flutter</h3>
+                        <p>After working through the interface decisions, I implemented front-end changes in the Flutter apps. This meant working with the existing widgets and project structure, checking how screens behaved in the app, and adjusting the implementation where needed.</p>
+                        <p><strong>Evidence to add:</strong> screenshots of the implemented screens, relevant code snippets, or a short screen recording of a completed flow.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="iteration-phase">
+                    <div class="process-step">
+                      <div class="process-number">05</div>
+                      <div>
+                        <h3>Collaborate, review and iterate</h3>
+                        <p>I worked in feature branches so changes could be developed in a more organised way and integrated with the wider project. I collaborated with Guus on the development workflow, while Gerard provided the final direction on design decisions and Gert-Jan represented the stakeholder perspective.</p>
+                        <p>Feedback and technical constraints were part of the process. The goal was to make improvements that were useful for the product and realistic to implement, rather than treating the design as separate from development.</p>
+                        <p><strong>Evidence to add:</strong> GitHub branch or pull-request screenshots, feedback notes, and examples of a design decision that changed after review.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="content-section">
+              <h2 class="section-label">Design Decisions</h2>
+              <div class="rich-text">
+                <h3>Navigation and information hierarchy</h3>
+                <p>One recurring consideration was how quickly users could find the action they needed. In WildGids, I wanted the map to feel like the main destination and the observation flow to be easy to access. In WildRapport, the different report types needed to be understandable within the app's broader structure.</p>
+
+                <h3>Consistency without forcing both apps to be identical</h3>
+                <p>WildGids and WildRapport serve different purposes, so the goal was not to make every screen the same. Instead, I considered how shared patterns, clear labels and a consistent visual language could make the products feel related while still supporting their different tasks.</p>
+
+                <h3>Design within technical constraints</h3>
+                <p>Because I was also implementing the interface, I could consider how a design would translate into Flutter. This helped connect the visual decisions with the real app structure and made it easier to spot when a proposed change needed to be adjusted during implementation.</p>
+
+                <figure class="case-study-figure full-width-image">
+                  <img src="../images/wildlife-design-comparison.png" alt="WildlifeNL interface design comparison" class="case-study-image">
+                  <figcaption>Show a before-and-after comparison here to make the design changes and reasoning visible.</figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section class="content-section">
+              <h2 class="section-label">Implementation</h2>
+              <div class="rich-text">
+                <h3>Flutter front-end development</h3>
+                <p>I worked in the existing Flutter codebase, using Dart to implement interface changes. The project also used packages such as <code>flutter_map</code>, <code>geolocator</code>, <code>shared_preferences</code>, <code>flutter_svg</code> and <code>package_info_plus</code>.</p>
+                <p>My focus was on the front-end experience and how the screens and interactions worked together. I collaborated with the wider team rather than treating the apps as standalone builds.</p>
+
+                <h3>Version control and collaboration</h3>
+                <p>Git and GitHub were part of my day-to-day workflow. I used feature branches to separate areas of work, including styling and individual reporting flows. This made it easier to work on a specific task while keeping the work organised for integration.</p>
+                <ul>
+                  <li><code>styling/ui-polish</code> — interface styling and refinement</li>
+                  <li><code>feature/waarneming-flow</code> — observation flow</li>
+                  <li><code>feature/schademelding-flow</code> — damage-reporting flow</li>
+                  <li><code>feature/dieraanrijding</code> — animal-collision reporting</li>
+                </ul>
+                <p>The backend work was handled separately in collaboration with Guus. Coordinating the front-end and backend work helped me understand the importance of clear ownership, branch organisation and communication within a shared codebase.</p>
+              </div>
+            </section>
+
+            <section class="content-section">
+              <h2 class="section-label">Final Work</h2>
+              <div class="rich-text">
+                <p>This section should show the actual screens and flows you worked on, rather than only describing them. The strongest case study evidence will make the connection between the original situation, your design decisions and the implemented result clear.</p>
+                <div class="iteration-showcase">
+                  <figure class="case-study-figure">
+                    <img src="../images/wildgids-final-screens.png" alt="Final WildGids screens" class="case-study-image">
+                    <figcaption>WildGids — add the final map and observation screens you contributed to.</figcaption>
+                  </figure>
+                  <figure class="case-study-figure">
+                    <img src="../images/wildrapport-final-screens.png" alt="Final WildRapport screens" class="case-study-image">
+                    <figcaption>WildRapport — add the final navigation and reporting screens you contributed to.</figcaption>
+                  </figure>
+                </div>
+                <p>If you have a screen recording, you can replace one of these images with a video using the same <code>case-study-video</code> class already used in this page's styling.</p>
+              </div>
+            </section>
+
+            <section class="content-section">
+              <h2 class="section-label">Reflection & Learning</h2>
+              <div class="rich-text">
+                <p>This internship gave me experience working on existing products where design and development decisions are connected. I had to understand the current experience before proposing changes, and then consider how those changes would work within a real Flutter codebase.</p>
+                <ul>
+                  <li><strong>Designing for an existing product:</strong> learning to improve an established interface instead of starting with a blank canvas.</li>
+                  <li><strong>Connecting UX and implementation:</strong> considering both the user experience and the practical details of building screens in Flutter.</li>
+                  <li><strong>Working collaboratively:</strong> coordinating front-end work with backend development and responding to stakeholder input.</li>
+                  <li><strong>Making design decisions:</strong> explaining the reason for a change and balancing usability, consistency and technical constraints.</li>
+                  <li><strong>Using version control:</strong> organising work through feature branches and collaborating within an existing development workflow.</li>
+                </ul>
+                <blockquote>
+                  The biggest lesson was that improving an app is not only about making individual screens look better. The navigation, the task flow, the implementation and the people involved all shape the final experience.
+                </blockquote>
+                <p>To make this reflection more personal and evidence-based, add one specific example of a design decision that changed during the internship, what feedback or constraint influenced it, and what you learned from the result.</p>
+              </div>
+            </section>
+
+            <div class="case-study-nav">
+              <a href="./center.html" class="prev-project">← Center Browser Extension</a>
+              <a href="./nasmak.html" class="next-project">Nasmak PM →</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>© 2026 Mila Pulvirenti - Built with HTML, CSS & JS</small>
+        <nav class="footer-nav">
+          <a href="mailto:milapulvirenti@icloud.com">milapulvirenti@icloud.com</a>
+          <a href="https://linkedin.com/in/mila-pulvirenti" target="_blank">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

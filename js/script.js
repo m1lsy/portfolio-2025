@@ -1,68 +1,73 @@
-(function(){
-  // Create interactive dot grid
-  function createDotGrid() {
-    const grid = document.querySelector('.dot-grid');
-    if (!grid) return;
+// Keep the work banner subtly tied to the user's scroll direction.
+(function () {
+	const marquee = document.querySelector('.work-marquee');
+	if (!marquee) return;
 
-    // Create dots
-    const rows = 15;
-    const cols = 20;
-    for (let i = 0; i < rows * cols; i++) {
-      const dot = document.createElement('div');
-      dot.className = 'dot';
-      grid.appendChild(dot);
-    }
+	let lastScrollY = window.scrollY;
+	let offset = 0;
+	let framePending = false;
 
-    // Interactive effect
-    let timeout;
-    grid.addEventListener('mousemove', (e) => {
-      const rect = grid.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      
-      clearTimeout(timeout);
-      
-      grid.querySelectorAll('.dot').forEach(dot => {
-        const dotRect = dot.getBoundingClientRect();
-        const dotX = dotRect.left - rect.left + dotRect.width/2;
-        const dotY = dotRect.top - rect.top + dotRect.height/2;
-        
-        const distance = Math.hypot(x - dotX, y - dotY);
-        if (distance < 60) {
-          dot.classList.add('active');
-          timeout = setTimeout(() => dot.classList.remove('active'), 300);
-        }
-      });
-    });
-  }
+	function updateMarquee() {
+		const scrollDelta = window.scrollY - lastScrollY;
+		lastScrollY = window.scrollY;
 
-  // Card reveal animation
-  function animateCards() {
-    const cards = document.querySelectorAll('.card');
-    cards.forEach((c, i) => {
-      c.style.opacity = '0';
-      c.style.transform = 'translateY(8px)';
-      setTimeout(()=>{
-        c.style.transition = 'opacity .45s ease, transform .45s ease';
-        c.style.opacity = '1';
-        c.style.transform = 'translateY(0)';
-      }, 120 * i);
-    });
-  }
+		if (scrollDelta < 0) {
+			offset -= Math.abs(scrollDelta) * 0.7;
+		} else if (scrollDelta > 0) {
+			offset += scrollDelta * 0.15;
+		}
 
-  // Duplicate banner content for smooth infinite scroll
-  function setupBanner() {
-    const content = document.querySelector('.banner-content');
-    if (content) {
-      const clone = content.cloneNode(true);
-      content.parentElement.appendChild(clone);
-    }
-  }
+		offset = Math.max(-marquee.scrollWidth * 0.35, Math.min(0, offset));
+		marquee.style.setProperty('--marquee-x', `${offset}px`);
+		framePending = false;
+	}
 
-  // Initialize
-  document.addEventListener('DOMContentLoaded', function(){
-    createDotGrid();
-    animateCards();
-    setupBanner();
-  });
+	window.addEventListener('scroll', function () {
+		if (!framePending) {
+			framePending = true;
+			window.requestAnimationFrame(updateMarquee);
+		}
+	}, { passive: true });
+})();
+
+(function () {
+	const heroArt = document.querySelector('.hero-art');
+	const draggableItems = document.querySelectorAll('.hero-note, .hero-tag, .hero-signature');
+	if (!heroArt || !draggableItems.length) return;
+
+	draggableItems.forEach(function (item) {
+		item.addEventListener('pointerdown', function (event) {
+			const artRect = heroArt.getBoundingClientRect();
+			const itemRect = item.getBoundingClientRect();
+			const offsetX = event.clientX - itemRect.left;
+			const offsetY = event.clientY - itemRect.top;
+
+			item.classList.add('is-dragging');
+			item.setPointerCapture(event.pointerId);
+
+			function moveItem(moveEvent) {
+				const maxLeft = artRect.width - itemRect.width;
+				const maxTop = artRect.height - itemRect.height;
+				const left = Math.max(0, Math.min(maxLeft, moveEvent.clientX - artRect.left - offsetX));
+				const top = Math.max(0, Math.min(maxTop, moveEvent.clientY - artRect.top - offsetY));
+
+				item.style.left = `${left}px`;
+				item.style.top = `${top}px`;
+				item.style.right = 'auto';
+				item.style.bottom = 'auto';
+			}
+
+			function stopDragging() {
+				item.classList.remove('is-dragging');
+				item.removeEventListener('pointermove', moveItem);
+				item.removeEventListener('pointerup', stopDragging);
+				item.removeEventListener('pointercancel', stopDragging);
+			}
+
+			item.addEventListener('pointermove', moveItem);
+			item.addEventListener('pointerup', stopDragging);
+			item.addEventListener('pointercancel', stopDragging);
+			event.preventDefault();
+		});
+	});
 })();
